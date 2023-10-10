@@ -1,0 +1,46 @@
+cancer_id	tmef	tumor_size	tmef_nc98	label	histology	stage
+cancer_cfdna_1484	2.55291e-5	35	1.376508e-4	Kidney	Chromophobe RCC	I
+cancer_cfdna_935	3.94556e-5	68	1.376508e-4	Kidney	Clear Cell RCC	II
+cancer_cfdna_948	2.38169e-5	80	1.376508e-4	Kidney	Clear Cell RCC	II
+cancer_cfdna_1019	1.97036e-5	23	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_1021	2.01564e-5	62	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_1048	3.59185e-5	100	1.376508e-4	Kidney	Clear Cell RCC	III
+cancer_cfdna_1052	5.23681e-5	70	1.376508e-4	Kidney	Clear Cell RCC	III
+cancer_cfdna_1100	3.03537e-5	40	1.376508e-4	Kidney	Chromophobe RCC	I
+cancer_cfdna_1232	3.02149e-5	42	1.376508e-4	Kidney	Clear Cell RCC	III
+cancer_cfdna_1234	3.80855e-5	18	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_1287	0.0014280757	25	1.376508e-4	Kidney	RCC NOS	I
+cancer_cfdna_1324	3.41688e-5	29	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_1356	6.24877e-5	115	1.376508e-4	Kidney	RCC NOS	III
+cancer_cfdna_1377	2.20496e-5	28	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_1432	4.09466e-5	45	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_504	2.43267e-5	42	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_513	2.59092e-5	23	1.376508e-4	Kidney	RCC NOS	I
+cancer_cfdna_537	2.85309e-5	95	1.376508e-4	Kidney	Chromophobe RCC	II
+cancer_cfdna_559	5.58341e-5	30	1.376508e-4	Kidney	Papillary RCC	I
+cancer_cfdna_560	8.058166e-4	40	1.376508e-4	Kidney	Papillary RCC	I
+cancer_cfdna_607	2.79159e-5	21	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_626	6.53293e-5	56	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_633	1.320171e-4	46	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_644	3.33614e-5	25	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_651	3.37647e-5	24	1.376508e-4	Kidney	Chromophobe RCC	I
+cancer_cfdna_653	5.427521e-4	95	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_698	6.08894e-5	88	1.376508e-4	Kidney	Clear Cell RCC	II
+cancer_cfdna_703	4.43824e-5	39	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_716	2.91448e-5	28	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_727	2.28537e-5	21	1.376508e-4	Kidney	Papillary RCC	I
+cancer_cfdna_737	3.21903e-5	27	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_761	2.61541e-5	65	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_767	3.17642e-5	40	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_773	1.7955e-5	55	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_774	7.01275e-5	55	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_791	2.91449e-5	21	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_803	2.36814e-5	33	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_812	3.12708e-5	40	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_827	8.623573e-4	80	1.376508e-4	Kidney	Clear Cell RCC	II
+cancer_cfdna_841	4.12814e-5	48	1.376508e-4	Kidney	RCC NOS	I
+cancer_cfdna_855	3.5486e-5	48	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_871	2.05671e-5	51	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_873	3.9739e-5	40	1.376508e-4	Kidney	Papillary RCC	I
+cancer_cfdna_888	2.66111e-5	17	1.376508e-4	Kidney	Clear Cell RCC	I
+cancer_cfdna_906	4.07609e-5	35	1.376508e-4	Kidney	Chromophobe RCC	I

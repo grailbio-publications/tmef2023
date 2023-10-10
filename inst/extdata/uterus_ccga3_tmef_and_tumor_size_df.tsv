@@ -1,0 +1,51 @@
+cancer_id	tmef	tumor_size	tmef_nc98	histology	label	stage
+cancer_cfdna_971	7.98719e-5	30	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_992	1.385266e-4	25	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1165	4.09569e-5	40	1.041925e-4	other / unknown	Uterus	III
+cancer_cfdna_1208	1.59026e-5	22	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_372	0.0034017326	35	1.041925e-4	Serous	Uterus	III
+cancer_cfdna_699	3.74708e-5	75	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_722	2.83301e-5	10	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_760	1.51306e-5	17	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_818	4.28746e-5	50	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_825	2.03484e-5	40	1.041925e-4	Serous	Uterus	III
+cancer_cfdna_919	2.22701e-5	50	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_952	1.086338e-4	78	1.041925e-4	other / unknown	Uterus	I
+cancer_cfdna_994	2.13692e-5	54	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1022	1.69938e-5	38	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1035	2.98233e-5	55	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_289	0.0101150169	65	1.041925e-4	Endometrioid	Uterus	III
+cancer_cfdna_1038	2.30141e-5	6	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_295	0.0025101139	41	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1064	4.46167e-5	35	1.041925e-4	Endometrioid	Uterus	III
+cancer_cfdna_1069	1.47232e-5	20	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1093	1.005806e-4	37	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_313	0.0032985982	30	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1116	1.12151e-5	45	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1123	0.0010461788	210	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1124	1.08166e-5	40	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1149	3.55251e-5	67	1.041925e-4	Mullerian	Uterus	II
+cancer_cfdna_1154	1.2536e-5	55	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1155	5.47147e-5	42	1.041925e-4	other / unknown	Uterus	III
+cancer_cfdna_1176	4.99013e-5	20	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1178	3.114166e-4	55	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1183	1.6047e-5	38	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1187	3.42323e-5	27	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1249	2.35826e-5	60	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1252	1.83771e-5	29	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1278	2.73094e-5	31	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1293	1.93537e-5	40	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1364	1.4569e-5	40	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1367	1.140751e-4	40	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1396	1.32688e-5	25	1.041925e-4	Endometrioid	Uterus	II
+cancer_cfdna_1409	2.18313e-5	34	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1424	1.867682e-4	60	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_1463	0.001051431	35	1.041925e-4	other / unknown	Uterus	I
+cancer_cfdna_1473	2.29143e-5	55	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_612	3.81457e-5	42	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_627	2.76406e-5	43	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_671	4.2678e-5	16	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_679	1.488027e-4	56	1.041925e-4	Endometrioid	Uterus	III
+cancer_cfdna_170	0.0177963855	40	1.041925e-4	Endometrioid	Uterus	III
+cancer_cfdna_861	1.512537e-4	40	1.041925e-4	Endometrioid	Uterus	I
+cancer_cfdna_882	2.30384e-5	14	1.041925e-4	Serous	Uterus	I

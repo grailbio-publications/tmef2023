@@ -1,0 +1,38 @@
+cancer_id	tmef	histology	tumor_size	tmef_nc98	label	stage
+cancer_cfdna_945	1.82772e-5	Adenocarcinoma	31	9.80484e-5	Lung	I
+cancer_cfdna_973	3.06308e-5	Squamous cell carcinoma	15	9.80484e-5	Lung	I
+cancer_cfdna_1398	2.1689e-5	Adenocarcinoma	17	9.80484e-5	Lung	I
+cancer_cfdna_915	1.01869e-5	Adenocarcinoma	14	9.80484e-5	Lung	I
+cancer_cfdna_949	2.15402e-5	Adenocarcinoma	15	9.80484e-5	Lung	I
+cancer_cfdna_272	0.0246576945	Adenocarcinoma	45	9.80484e-5	Lung	II
+cancer_cfdna_1017	6.69748e-4	Squamous cell carcinoma	85	9.80484e-5	Lung	II
+cancer_cfdna_1037	2.09069e-5	Adenocarcinoma	20	9.80484e-5	Lung	I
+cancer_cfdna_1040	3.86586e-5	Adenocarcinoma	27	9.80484e-5	Lung	I
+cancer_cfdna_1103	1.49945e-5	Adenocarcinoma	16	9.80484e-5	Lung	I
+cancer_cfdna_1105	2.86304e-5	Adenocarcinoma	35	9.80484e-5	Lung	III
+cancer_cfdna_1138	2.03525e-5	Adenocarcinoma	13	9.80484e-5	Lung	I
+cancer_cfdna_1182	1.56175e-5	Adenocarcinoma	27	9.80484e-5	Lung	I
+cancer_cfdna_1199	9.39757e-5	Squamous cell carcinoma	27	9.80484e-5	Lung	I
+cancer_cfdna_1242	1.1472e-5	Adenocarcinoma	12	9.80484e-5	Lung	I
+cancer_cfdna_1390	1.37088e-5	Adenocarcinoma	115	9.80484e-5	Lung	II
+cancer_cfdna_550	3.14866e-5	Adenocarcinoma	12	9.80484e-5	Lung	I
+cancer_cfdna_585	3.43646e-5	Squamous cell carcinoma	35	9.80484e-5	Lung	I
+cancer_cfdna_619	1.40298e-5	Adenocarcinoma	17	9.80484e-5	Lung	I
+cancer_cfdna_622	7.19119e-5	Adenocarcinoma	34	9.80484e-5	Lung	II
+cancer_cfdna_638	1.03015e-5	Adenocarcinoma	17	9.80484e-5	Lung	I
+cancer_cfdna_683	4.80654e-5	Adenocarcinoma	18	9.80484e-5	Lung	I
+cancer_cfdna_692	9.403136e-4	Squamous cell carcinoma	42	9.80484e-5	Lung	II
+cancer_cfdna_702	1.40292e-5	Adenocarcinoma	15	9.80484e-5	Lung	I
+cancer_cfdna_705	1.29079e-5	Adenocarcinoma	14	9.80484e-5	Lung	I
+cancer_cfdna_709	2.718604e-4	Squamous cell carcinoma	70	9.80484e-5	Lung	I
+cancer_cfdna_717	1.72353e-5	Adenocarcinoma	6	9.80484e-5	Lung	I
+cancer_cfdna_723	2.576023e-4	Squamous cell carcinoma	58	9.80484e-5	Lung	II
+cancer_cfdna_738	2.23601e-5	Adenocarcinoma	15	9.80484e-5	Lung	I
+cancer_cfdna_751	1.39023e-5	Adenocarcinoma	16	9.80484e-5	Lung	I
+cancer_cfdna_768	2.357247e-4	Adenocarcinoma	25	9.80484e-5	Lung	II
+cancer_cfdna_771	1.78647e-5	Adenocarcinoma	42	9.80484e-5	Lung	II
+cancer_cfdna_804	2.62885e-5	Adenocarcinoma	12	9.80484e-5	Lung	I
+cancer_cfdna_195	0.0041713222	Squamous cell carcinoma	55	9.80484e-5	Lung	III
+cancer_cfdna_856	1.034834e-4	Squamous cell carcinoma	32	9.80484e-5	Lung	II
+cancer_cfdna_863	2.853195e-4	Adenocarcinoma	37	9.80484e-5	Lung	II
+cancer_cfdna_886	1.80553e-5	Squamous cell carcinoma	20	9.80484e-5	Lung	I

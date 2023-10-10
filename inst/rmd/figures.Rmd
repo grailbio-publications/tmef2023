@@ -1,0 +1,1370 @@
+---
+title: "TMeF Manuscript Figures"
+author: "Collin Melton, Peter Freese, Yifan Zhou"
+date: '`r format(Sys.time(), "%Y-%m-%d %X")`'
+output:
+  html_document:
+    number_sections: yes
+    toc: yes
+    toc_float: false
+    code_folding: hide
+params:
+  n_top_prev_variants: 50
+---
+
+<style type="text/css">
+.main-container {
+max-width: 2000px;
+margin-left: auto;
+margin-right: auto;
+}</style>
+
+```{r setup, include=FALSE}
+# Set ggplot style.
+ggplot2::theme_set(
+  ggplot2::theme_bw() +
+    ggplot2::theme(plot.title = ggplot2::element_text(size = 12, hjust = 0.5),
+                   legend.title = ggplot2::element_text(size = 12),
+                   legend.text = ggplot2::element_text(size = 12),
+                   axis.title = ggplot2::element_text(size = 12),
+                   axis.text = ggplot2::element_text(size = 12))
+)
+
+# Set default chunk output.
+knitr::opts_chunk$set(echo = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA,
+                      tidy = FALSE,
+                      fig.align = "center",
+                      results = "asis",
+                      fig.width = 8,
+                      fig.height = 6)
+
+# Formatting of pander tables.
+pander::panderOptions('knitr.auto.asis', TRUE)
+pander::panderOptions("table.split.table", Inf)
+```
+
+# Figure 1
+
+## Figure 1B: Number of DMRs Per Participant Per Cancer Type
+
+```{r violinplot_dmr_count_per_ptp}
+region_size_mb <- unique(tmef2023::dmr_count_per_ptp_fig_df$region_size_mb)
+
+tmef2023::dmr_count_per_ptp_fig_df |>
+  ggplot2::ggplot(ggplot2::aes(x = label_w_size,
+                               y = n)) +
+  ggplot2::geom_violin() +
+  ggplot2::geom_boxplot(width = 0.05,
+                        outlier.shape = NA) +
+  ggplot2::geom_point(size = 0.5,
+                      color = "grey30",
+                      position = ggplot2::position_jitter(width = 0.3,
+                                                          height = 0,
+                                                          seed = 1234)) +
+  ggplot2::scale_y_log10(
+    breaks = scales::trans_breaks("log10", function(x) 10^x),
+    labels = scales::trans_format("log10", scales::math_format(10^.x)),
+    # Label right side y-axis ticks.
+    sec.axis = ggplot2::sec_axis(
+      ~ . / region_size_mb,
+      breaks = scales::trans_breaks("log10", function(x) 10^x),
+      labels = scales::trans_format("log10", scales::math_format(10^.x)),
+      guide = ggplot2::guide_axis(title = "Number of DMRs per Mb")
+    ),
+  ) +
+  ggplot2::annotation_logticks(sides = "l") +
+  ggplot2::labs(y = "Number of DMRs") +
+  ggplot2::theme(axis.text.x = ggplot2::element_text(size = 11,
+                                                     angle = 45,
+                                                     vjust = 1,
+                                                     hjust = 1),
+                 axis.title.x = ggplot2::element_blank(),
+                 # Extra space on left side of plot so x axis doesn't get cut off.
+                 plot.margin = ggplot2::unit(c(t = 0, r = 0, b = 0, l = 2), "cm"))
+```
+
+## Figure 1C: DMR Prevalance Per Cancer Type
+
+```{r prevalence_violin_plot, fig.height=5}
+# Visualize the distribution of prevalence rates of methyl variants within
+# each cancer type using violin plots.
+tmef2023::dmr_prevalence_per_cancer_type_fig_df |>
+  ggplot2::ggplot(ggplot2::aes(x = label_w_size,
+                               y = prevalence)) +
+  ggplot2::geom_violin(width = 1.1) +
+  ggplot2::geom_boxplot(width = 0.1, color = "grey20", alpha = 0.5,
+                        outlier.shape = NA) +
+  ggplot2::labs(y = "Estimated DMR Prevalence") +
+  ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 45, hjust = 1,
+                                                     size = 11),
+                 axis.title.x = ggplot2::element_blank(),
+                 # Extra space on left side of plot so x axis labels don't get cut off.
+                 plot.margin = ggplot2::unit(c(t = 0, r = 0, b = 0, l = 2), "cm"))
+```
+
+# Figure 2: Heatmap of Most Prevalent DMRs
+
+The following heatmap visualizes DMR frequencies for the top
+`r params$n_top_prev_variants` most prevalent variants per cancer type. 
+All variants are hierarchically clustered. Participants are first clustered 
+within each cancer type, and then cancer types are ordered based on the 
+similarity of their mean profiles.
+
+```{r plt_variants_heatmap_top_prevalence, fig.width=9, fig.height=8, echo=FALSE}
+# This generates another version of variant frequency heatmap,
+# where for each cancer type, a fixed number of variants are selected simply
+# based on their rank of prevalence rate in the cancer type.
+mat_full_samples_by_variants <- as.matrix(tmef2023::df_full_samples_by_variants_fig_df)
+labels <- unique(tmef2023::tissue_samples_df$label)
+
+# `distance_metric` will be assigned to ComplexHeatmap::Heatmap() argument
+# `clustering_distance_rows`, and can be either a pre-defined character
+# or a function defining distance.
+distance_metric <- "manhattan"
+# Hierarchically cluster ptps within each cancer type based on their variant
+# freq. profiles and record the participants in their clustered order;
+# also returns a mean variant freq. profile averaged over all samples in
+# each cancer type.
+ls_ordered_ptps <- list()
+for (label_idx in seq_along(labels)) {
+  vec_this_type_samples <- tmef2023::tissue_samples_df |>
+    dplyr::filter(label == labels[label_idx]) |>
+    dplyr::pull(tissue_id)
+  mat_this_type_samples <-
+    mat_full_samples_by_variants[vec_this_type_samples, ]
+  within_type_heatmap <-
+    ComplexHeatmap::Heatmap(mat_this_type_samples,
+                            clustering_distance_rows = distance_metric,
+                            clustering_method_rows = "ward.D",
+                            cluster_columns = FALSE)
+  vec_ordered_indices <- ComplexHeatmap::row_order(within_type_heatmap)
+  # Get participant_id's in the order after hierarchical clustering.
+  vec_ordered_ptps <- vec_this_type_samples[vec_ordered_indices]
+  # Record this type's set of ordered participants
+  df_ordered_ptps <- data.frame(participant_id = vec_ordered_ptps,
+                                label = labels[label_idx])
+  ls_ordered_ptps[[labels[label_idx]]] <-
+    list(df_ordered_ptps = df_ordered_ptps,
+         vec_mean_profile = colMeans(mat_this_type_samples))
+}
+# Combined the mean profile of each cancer type into one matrix and
+# perform hierarchical clustering to determine the cancer type order.
+mat_type_mean_profiles_combined <-
+  dplyr::bind_rows(lapply(ls_ordered_ptps, function(x) {
+    x$vec_mean_profile
+  })) |>
+  as.matrix()
+rownames(mat_type_mean_profiles_combined) <- labels
+type_mean_heatmap <- ComplexHeatmap::Heatmap(
+  mat_type_mean_profiles_combined,
+  # Use a different distance metric for comparison between cancer types.
+  clustering_distance_rows = "spearman",
+  clustering_method_rows = "ward.D",
+  cluster_columns = FALSE
+)
+# Get the order of cancer types after hierarchical clustering.
+vec_ordered_type_indices <- ComplexHeatmap::row_order(type_mean_heatmap)
+# Get the ordered cancer type vector.
+vec_ordered_cancer_types <- labels[vec_ordered_type_indices]
+
+# Combine sorted participants together based on the clustered cancer type order.
+df_ordered_ptps_combined <-
+  ls_ordered_ptps[[vec_ordered_type_indices[1]]]$df_ordered_ptps
+for (i in 2:length(vec_ordered_type_indices)) {
+  df_ordered_ptps_combined <-
+    dplyr::bind_rows(df_ordered_ptps_combined,
+                     ls_ordered_ptps[[vec_ordered_type_indices[i]]]$df_ordered_ptps)
+}
+df_ordered_ptps_combined <- df_ordered_ptps_combined |>
+  dplyr::mutate(label = factor(label,
+                               levels = vec_ordered_cancer_types))
+
+# Generate the positions of breaks and midpoints that correspond to the number
+# of participants in each cancer type, will be used for heatmap labeling.
+df_ptp_tick_label <- df_ordered_ptps_combined |>
+  dplyr::count(label) |>
+  dplyr::mutate(breaks = cumsum(n)) |>
+  dplyr::mutate(midpoint = breaks - (n / 2),
+                cancer_type = stringr::str_sub(label, end = 12))
+
+greys_color_map <- rep(c("snow3", "snow4"), ceiling(length(labels) / 2))
+greys_color_map <- greys_color_map[1:length(labels)]
+names(greys_color_map) <- vec_ordered_cancer_types
+annot_row <-
+  ComplexHeatmap::rowAnnotation(
+    `Cancer type` = df_ordered_ptps_combined$label,
+    col = list(`Cancer type` = greys_color_map),
+    annotation_name_gp = grid::gpar(fontsize = 24),
+    simple_anno_size = grid::unit(0.5, "cm"),
+    show_annotation_name = FALSE,
+    show_legend = FALSE,
+    foo = ComplexHeatmap::anno_mark(at = floor(df_ptp_tick_label$midpoint),
+                                    labels = df_ptp_tick_label$label,
+                                    labels_gp = grid::gpar(fontsize = 24))
+  )
+ht <- ComplexHeatmap::Heatmap(
+  mat_full_samples_by_variants[df_ordered_ptps_combined$participant_id, ],
+  col = hcl.colors(8, palette = "viridis", alpha = NULL, rev = T),
+  name = "DMR\nFrequency",
+  row_title = "Samples",
+  column_title = paste0("Top ", params$n_top_prev_variants,
+                        " Most Prevalent DMRs Per Cancer Label"),
+  cluster_rows = FALSE,
+  row_split = df_ordered_ptps_combined$label,
+  row_gap = grid::unit(0.5, "mm"),
+  clustering_distance_columns = distance_metric,
+  clustering_method_columns = "ward.D",
+  show_row_names = FALSE,
+  show_column_names = FALSE,
+  right_annotation = annot_row,
+  column_title_gp = grid::gpar(fontsize = 24),
+  row_dend_gp = grid::gpar(fontsize = 24),
+  heatmap_legend_param = list(labels_gp = grid::gpar(fontsize = 18),
+                              title_gp = grid::gpar(fontsize = 18))
+)
+ComplexHeatmap::draw(ht)
+```
+
+# Fig S3: Overlap in DMRs among cancer types
+
+The following heatmap shows the degree of pairwise overlap in DMRs called 
+from each cancer type (quantified by Jaccard index = intersection / union).
+
+```{r figs3, fig.width=12, fig.height=10}
+dmr_num_df <- tmef2023::dmr_prevalence_per_cancer_type_fig_df |>
+  dplyr::count(label) |>
+  dplyr::arrange(-n)
+labels <- dmr_num_df$label
+ls_dmrs_in_cancer_type <- list()
+mat_similarity <- diag(nrow = length(labels))
+vec_all_dmrs <- unique(tmef2023::dmr_prevalence_per_cancer_type_fig_df$loc_id)
+for (this_label in labels) {
+  vec_dmrs_in_label <- tmef2023::dmr_prevalence_per_cancer_type_fig_df |>
+    dplyr::filter(label == this_label) |>
+    dplyr::distinct(loc_id) |>
+    dplyr::pull(loc_id)
+  ls_dmrs_in_cancer_type[[this_label]] <-
+    (vec_all_dmrs %in% vec_dmrs_in_label) * 1
+}
+for (i in 1:(length(labels)-1)) {
+  bool_dmrs_in_type_1 <- ls_dmrs_in_cancer_type[[i]]
+  for (j in (i+1):length(labels)) {
+    bool_dmrs_in_type_2 <- ls_dmrs_in_cancer_type[[j]]
+    cosine_sim <- sum(bool_dmrs_in_type_1 * bool_dmrs_in_type_2) /
+      sqrt(sum(bool_dmrs_in_type_1^2) * sum(bool_dmrs_in_type_2^2))
+    mat_similarity[i, j] <- cosine_sim
+    mat_similarity[j, i] <- cosine_sim
+  }
+}
+# Annotate the number of DMRs along with the cancer type in these labels.
+dmr_num_df <- dmr_num_df |>
+  dplyr::mutate(label_w_n = sprintf(
+    "%s (%s)",
+    label,
+    format(n, nsmall=0, big.mark=",")))
+rownames(mat_similarity) <- dmr_num_df$label_w_n
+colnames(mat_similarity) <- labels
+
+# Hierarchical clustering of cancer types.
+# Pairwise distance between cancer types is measured by 1-similarity.,
+# and this distance matrix is then provided to hclust() for hierarchical clustering.
+mat_dist <- as.dist(1 - mat_similarity)
+ht_dendo <- as.dendrogram(hclust(mat_dist))
+# Blank out the diagonal values for heatmap visualization.
+diag(mat_similarity) <- NA
+color_fxn <- circlize::colorRamp2(c(0, max(mat_similarity[!is.na(mat_similarity)])),
+                                  c("white", "red"))
+ht_cosine_heatmap <- ComplexHeatmap::Heatmap(
+  mat_similarity,
+  col = color_fxn,
+  # Pass in the computed hierarchical tree.
+  cluster_rows = ht_dendo,
+  cluster_columns = ht_dendo,
+  show_row_names = TRUE,
+  show_column_names = TRUE,
+  name = "cosine",
+  column_title = "Pairwise DMR sharing between cancer types",
+  column_title_gp = grid::gpar(fontsize = 16),
+  width = ncol(mat_similarity) * grid::unit(5, "mm"),
+  height = nrow(mat_similarity) * grid::unit(5, "mm"))
+  # heatmap_mvar_pairwise_similarity(
+  #   df_mvars,
+  #   similarity = "cosine",
+  #   plot_title = ,
+  #   add_mvar_num_side = "row"
+  # )
+ComplexHeatmap::draw(ht_cosine_heatmap, heatmap_legend_side = "bottom")
+```
+
+# Figure 3
+
+Biopsy-free TMeF estimates linearity in synthetic dilutions.
+
+## Figure 3A: Synthetic Dilution Linearity Visualization
+
+```{r fig3a}
+titration_grid_results_solid_fig_df <- tmef2023::titration_grid_results_solid_fig_df
+
+# Manually compute GAM fit line + 95%CI
+smooth_gam_pred <-
+  mgcv::gam(
+    log10(tmef) ~ s(log10(expected_tmef), bs = "cs"),
+    data = titration_grid_results_solid_fig_df,
+    method = "REML"
+  ) |>
+  predict(titration_grid_results_solid_fig_df, se.fit = TRUE)
+df_smooth_gam_pred <-
+  data.frame(x = titration_grid_results_solid_fig_df$expected_tmef,
+             fit = 10^smooth_gam_pred$fit,
+             fit_lower_95pct_ci = 10^(smooth_gam_pred$fit -
+                                        (1.96 * smooth_gam_pred$se.fit)),
+             fit_upper_95pct_ci = 10^(smooth_gam_pred$fit +
+                                        (1.96 * smooth_gam_pred$se.fit)))
+# Plot measured TMeF against expected TMeF in titration series.
+titration_grid_results_solid_fig_df |>
+  dplyr::mutate(y_gam_fit = 10^smooth_gam_pred$fit,
+                y_gam_lower_95pct_ci = 10^(smooth_gam_pred$fit -
+                                             (1.96 * smooth_gam_pred$se.fit)),
+                y_gam_upper_95pct_ci = 10^(smooth_gam_pred$fit +
+                                             (1.96 * smooth_gam_pred$se.fit))) |>
+  ggplot2::ggplot(
+    ggplot2::aes(x = expected_tmef,
+                 y = tmef,
+                 ymin = tmef_lcb,
+                 ymax = tmef_ucb,
+                 group = interaction(replicate, cancer_id, noncancer_id))
+  ) +
+  ggplot2::geom_point(alpha = .05) +
+  ggplot2::geom_errorbar(alpha = 0.05, color = "gray", width = 0.2) +
+  ggplot2::geom_path(alpha = 0.05) +
+  ggplot2::geom_line(ggplot2::aes(x = expected_tmef,
+                                  y = y_gam_fit),
+                     color = "blue",
+                     size = 1,
+                     inherit.aes = FALSE) +
+  ggplot2::scale_x_log10(
+    breaks = scales::trans_breaks("log10", function(x) 10^x),
+    labels = scales::trans_format("log10", scales::math_format(10^.x))
+  ) +
+  ggplot2::scale_y_log10(
+    breaks = scales::trans_breaks("log10", function(x) 10^x),
+    labels = scales::trans_format("log10", scales::math_format(10^.x))
+  ) +
+  ggplot2::annotation_logticks(sides = "bl") +
+  ggplot2::coord_fixed() +
+  ggplot2::geom_abline(slope = 1, intercept = 0, color = "red") +
+  ggplot2::geom_abline(slope = 1, intercept = log10(2), color = "green", linetype = "dashed") +
+  ggplot2::geom_abline(slope = 1, intercept = -log10(2), color = "green", linetype = "dashed") +
+  ggplot2::labs(x = "Expected TMeF",
+                y = "Observed TMeF",
+                title = "Synthetic Dilution Curves") +
+  ggplot2::theme(axis.text = ggplot2::element_text(size = 11))
+```
+
+## Figure 3B: Synthetic Diution Linearity Accuracy at Fixed Fractions
+
+```{r fig3b}
+# Extrapolate an “observed” TMeF value at specific expected TMeF values of
+# 10^-6, -5, -4, … And then plot the cumulative fraction of samples for all
+# linearly interpolated “observed” TMeF values at each specific expected TMeF.
+vec_expected_tmefs <- 10^seq(-6, -1, 1)
+ls_titration_levels_interpolated <- list()
+for (i in seq_along(vec_expected_tmefs)) {
+  wh_expected_tmef <- vec_expected_tmefs[i]
+  # For each pair of cancer, non-cancer dilution series,
+  # identify the 2 data points with expected tmefs to the nearest left and right
+  # of the specified expected tmef value.
+  df_titration_left_of_expected_tmef <- titration_grid_results_solid_fig_df |>
+    dplyr::mutate(delta_target = expected_tmef - wh_expected_tmef) |>
+    dplyr::filter(delta_target <= 0) |>
+    dplyr::group_by(cancer_id, noncancer_id, replicate) |>
+    dplyr::arrange(-delta_target) |>
+    dplyr::slice_head(n = 1) |>
+    dplyr::ungroup()
+  df_titration_right_of_expected_tmef <- titration_grid_results_solid_fig_df |>
+    dplyr::mutate(delta_target = expected_tmef - wh_expected_tmef) |>
+    dplyr::filter(delta_target >= 0) |>
+    dplyr::group_by(cancer_id, noncancer_id, replicate) |>
+    dplyr::arrange(delta_target) |>
+    dplyr::slice_head(n = 1) |>
+    dplyr::ungroup()
+  df_titration_levels_around_expected_tmef <- df_titration_left_of_expected_tmef |>
+    dplyr::bind_rows(df_titration_right_of_expected_tmef)
+  # Only keep the series with expected tmef data points both to the left and
+  # right of the specified expected tmef value.
+  df_titration_levels_around_expected_tmef_valid_above_and_below <-
+    df_titration_levels_around_expected_tmef |>
+    dplyr::group_by(cancer_id, noncancer_id, replicate) |>
+    dplyr::summarise(n = dplyr::n(),
+                     n_above = sum(delta_target > 0),
+                     n_below = sum(delta_target < 0),
+                     .groups = "drop") |>
+    dplyr::filter(n == 2, n_above > 0, n_below > 0)
+  cat(sprintf("retaining %d of %d with estimates above and below the target",
+              nrow(df_titration_levels_around_expected_tmef_valid_above_and_below),
+              nrow(df_titration_levels_around_expected_tmef)))
+  df_titration_levels_around_expected_tmef <- df_titration_levels_around_expected_tmef |>
+    dplyr::inner_join(df_titration_levels_around_expected_tmef_valid_above_and_below,
+                      by = c("cancer_id", "noncancer_id", "replicate"))
+  df_titration_levels_interpolated_at_expected_tmef <-
+    df_titration_levels_around_expected_tmef |>
+    dplyr::select(cancer_id, noncancer_id, replicate,
+                  delta_target, expected_tmef, tmef) |>
+    dplyr::mutate(position = ifelse(delta_target <= 0, "1", "2"),
+                  wh_expected_tmef = wh_expected_tmef) |>
+    tidyr::pivot_wider(names_from = "position",
+                       values_from = c("delta_target",
+                                       "expected_tmef",
+                                       "tmef")) |>
+    # Linear interpolation of "observed" tmef y at
+    # specified expected tmef value (x):
+    # y = y1 + (x - x1) * (y2 - y1) / (x2 - x1)
+    dplyr::mutate(tmef_interpolated = tmef_1 +
+                    (wh_expected_tmef - expected_tmef_1) *
+                    (tmef_2 - tmef_1) /
+                    (expected_tmef_2 - expected_tmef_1))
+  ls_titration_levels_interpolated[[i]] <-
+    df_titration_levels_interpolated_at_expected_tmef
+}
+tmef_df_titration_levels_interpolated_combined <-
+  do.call(rbind, ls_titration_levels_interpolated)
+
+tmef_df_titration_levels_interpolated_combined |>
+  ggplot2::ggplot(ggplot2::aes(x = tmef_interpolated,
+                               color = factor(wh_expected_tmef))) +
+  ggplot2::stat_ecdf() +
+  ggplot2::scale_x_log10(
+    breaks = scales::trans_breaks("log10", function(x) 10^x),
+    labels = scales::trans_format("log10", scales::math_format(10^.x))
+  ) +
+  ggplot2::annotation_logticks(sides = "b") +
+  ggplot2::labs(x = "Interpolated measured TMeF",
+                y = "Cumulative fraction of samples",
+                color = "Expected TMeF") +
+  ggplot2::theme(axis.text = ggplot2::element_text(size = 11))
+```
+
+## Figure 3C: Table of Synthetic Diution Linearity Accuracy at Fixed Fractions
+
+```{r fig3c}
+# Table depicting the fraction of measured tmef within 1/2 to 2 fold of the
+# expected tmef and the median sample bias for a series of fixed target tmefs.
+df_titration_bias_summary <- tmef_df_titration_levels_interpolated_combined |>
+  dplyr::mutate(fold_change = tmef_interpolated / wh_expected_tmef,
+                within_two_fold = (fold_change <= 2 & fold_change >= .5)) |>
+  dplyr::mutate(wh_expected_tmef = factor(wh_expected_tmef)) |>
+  dplyr::group_by(wh_expected_tmef) |>
+  dplyr::summarise(fraction_in_range = mean(within_two_fold),
+                   median_fold_change = median(fold_change),
+                   .groups = "drop")
+tbl_titration_tmef <- df_titration_bias_summary |>
+    dplyr::mutate(fraction_in_range = round(fraction_in_range, 2),
+        median_fold_change = round(median_fold_change, 2)) |>
+    dplyr::rename(`Expected TMeF` = wh_expected_tmef,
+                  `Fraction within\n1/2 - 2 fold of target` = fraction_in_range,
+                  `Median fold change` = median_fold_change) |>
+    gt::gt()
+tbl_titration_tmef
+```
+
+# Figure 4: TMeF Concordance with SVAF
+
+```{r plt_tmef_vs_svaf}
+spearman_corr <- cor.test(tmef2023::tmef_vs_svaf_fig_df$tmef,
+                          tmef2023::tmef_vs_svaf_fig_df$svaf,
+                          method = "spearman")
+
+tmef2023::tmef_vs_svaf_fig_df |>
+  ggplot2::ggplot(ggplot2::aes(x = svaf,
+                               y = tmef,
+                               xmin = svaf_lcb,
+                               ymin = tmef_lcb,
+                               xmax = svaf_ucb,
+                               ymax = tmef_ucb)) +
+  ggplot2::geom_abline(alpha = 0.5, linetype = "dashed", color = "gray") +
+  ggplot2::geom_errorbar(color = "gray") +
+  ggplot2::geom_errorbarh(color = "gray") +
+  ggplot2::geom_point(shape = 21, size = 1) +
+  ggplot2::geom_text(x = 0.1, y = 0.1,
+                     label = sprintf("Spearman's rank correlation: %0.2f\np-value: %0.1e",
+                                     spearman_corr$estimate,
+                                     spearman_corr$p.value),
+                     hjust = 1) +
+  ggplot2::scale_x_log10(
+    breaks = scales::trans_breaks("log10", function(x) 10^x),
+    labels = scales::trans_format("log10", scales::math_format(10^.x)),
+    limits = c(1e-6, 1),
+    oob = scales::squish) +
+  ggplot2::scale_y_log10(
+    breaks = scales::trans_breaks("log10", function(x) 10^x),
+    labels = scales::trans_format("log10", scales::math_format(10^.x)),
+    limits = c(1e-6, 1),
+    oob = scales::squish) +
+  ggplot2::annotation_logticks(sides = "bl") +
+  ggplot2::labs(
+    x = "Small variant-based cTAF estimate",
+    y = "TMeF"
+  ) +
+  ggplot2::theme(aspect.ratio = 1) +
+  ggplot2::theme(panel.grid.minor = ggplot2::element_blank(),
+                 axis.text = ggplot2::element_text(size = 12),
+                 plot.caption = ggplot2::element_text(size = 11))
+
+cat(sprintf("Spearman's rank correlation: %0.2f, p-value: %0.10f",
+            spearman_corr$estimate,
+            spearman_corr$p.value))
+cat("\n\n")
+n_concordant <- sum(abs(log(tmef2023::tmef_vs_svaf_fig_df$tmef /
+                             tmef2023::tmef_vs_svaf_fig_df$svaf)) < log(10))
+n_total <- nrow(tmef2023::tmef_vs_svaf_fig_df)
+cat(sprintf(paste0("%0.0f%% (%d / %d) having a TMeF estimate within 10-fold",
+                   " of the matched SVAF estimate."),
+            n_concordant / n_total * 100,
+            n_concordant,
+            n_total))
+```
+
+# Table 1: Number of DMRs Per Cancer Type
+
+A table detailing the number of DMRs in each cancer type, before and
+after heme filtering.
+
+```{r number_of_variants_per_cancer_type}
+heme_labels <- c('Myeloid Lineage', 'Lymphoid Lineage', 'Plasma Cell Lineage')
+
+heme_dmrs <- tmef2023::unfiltered_dmrs_df |>
+  dplyr::filter(label %in% heme_labels) |>
+  dplyr::select(loc_id) |>
+  dplyr::distinct()
+
+df_unfiltered_dmrs_tally <- tmef2023::unfiltered_dmrs_df |>
+  dplyr::distinct(loc_id, label) |>
+  dplyr::count(label, name = "unfiltered_dmrs")
+
+df_heme_filtered_dmrs_tally <- dplyr::bind_rows(
+  tmef2023::dmr_prevalence_per_cancer_type_fig_df |>
+    dplyr::anti_join(heme_dmrs),
+  tmef2023::dmr_prevalence_per_cancer_type_fig_df |>
+    dplyr::filter(label %in% heme_labels)) |>
+  dplyr::distinct(loc_id, label) |>
+  dplyr::count(label, name = "heme_filtered_dmrs")
+
+df_n_dmrs_tally <- df_unfiltered_dmrs_tally |>
+  dplyr::inner_join(df_heme_filtered_dmrs_tally,
+                      by = "label") |>
+  dplyr::mutate(fraction_decreased = 1 - heme_filtered_dmrs / unfiltered_dmrs)
+
+# Print out the table.
+df_n_dmrs_tally |>
+  dplyr::transmute(
+    `Cancer Label` = label,
+    `Unfiltered DMRs` =
+      format(unfiltered_dmrs, nsmall=0, big.mark=","),
+    `Heme Filtered DMRs` =
+      format(heme_filtered_dmrs, nsmall=0, big.mark=","),
+    `Fraction Removed` = signif(fraction_decreased, 2),
+  ) |>
+  gt::gt() |>
+  gt::tab_header(
+    title = paste0("Number of DMRs in Each Cancer Type")
+  )
+
+cat(sprintf("A median of %0.0f%% of DMRs were filtered per non-hematopoietic cancer types",
+    median(df_n_dmrs_tally$fraction_decreased)*100))
+cat("\n\n")
+
+cat(sprintf(paste0("A median of %0.1f DMRs were identified per tissue biopsy sample ",
+                   "and a median of %.1f were identified per cancer type"),
+            median(tmef2023::dmr_count_per_ptp_fig_df$n),
+            median(df_n_dmrs_tally$heme_filtered_dmrs)))
+cat("\n\n")
+```
+
+# Supplementary Methods Figure: Number of CpGs Per Fragment Distribution
+
+```{r cpgs_per_fragment}
+tmef2023::nc_cpg_dist |>
+  ggplot2::ggplot() +
+  ggplot2::geom_point(ggplot2::aes(x = n_cpgs, y = cum_fraction),
+                      shape = 21) +
+  ggplot2::labs(x = "Number of CpGs Per Fragment",
+                y = "Fraction of Fragments") +
+  ggplot2::theme_bw() +
+  ggplot2::geom_vline(xintercept = 5, linetype = "dashed")
+
+# Render a table data used in the plot.
+tmef2023::nc_cpg_dist |>
+  dplyr::filter(n_cpgs < 10,
+                n_cpgs > 0) |>
+  dplyr::mutate(n_cpgs = as.character(n_cpgs)) |>
+  dplyr::select(n_cpgs, n_frags_fraction) |>
+  dplyr::bind_rows(
+    tmef2023::nc_cpg_dist |>
+      dplyr::filter(n_cpgs >= 10) |>
+      dplyr::summarise(n_frags_fraction = sum(n_frags_fraction)) |>
+      dplyr::mutate(n_cpgs = "10+")) |>
+  dplyr::mutate(`Cumulative Fraction of Fragments` = cumsum(n_frags_fraction)) |>
+  dplyr::select(`# of CpGs` = n_cpgs,
+                `Fraction of Fragments` = n_frags_fraction,
+                `Cumulative Fraction of Fragments`) |>
+  gt::gt() |>
+  gt::fmt_percent(columns = c("Fraction of Fragments",
+                             "Cumulative Fraction of Fragments"),
+                 decimals = 1)
+```
+
+# Figure S4: TMeF by Cancer Type by Stage
+
+```{r boxplot_by_stage_by_label, fig.width=8, fig.height=5}
+boxplot_by_stage_by_label_pvals <- tmef2023::df_cancer_tmefs_fig_df |>
+  dplyr::group_by(label) |>
+  dplyr::summarise(spearman_pval = cor.test(
+    tmef,
+    as.numeric(factor(stage, levels = c("I", "II", "III", "IV"))),
+    method = "spearman")$p.value,
+    .groups = "drop") |>
+  dplyr::mutate(spearman_pval_adj = p.adjust(p = spearman_pval, method = "BH"))
+
+# Plot faceted by label.
+tmef2023::df_cancer_tmefs_fig_df |>
+  dplyr::inner_join(boxplot_by_stage_by_label_pvals, by = "label") |>
+  ggplot2::ggplot(ggplot2::aes(x = stage_w_n,
+                               y = tmef)) +
+  ggplot2::geom_boxplot(outlier.shape = NA) +
+  ggplot2::geom_jitter(height = 0, shape = 21,
+                       ggplot2::aes(color = tmef > tmef_nc98)) +
+  ggplot2::theme_bw() +
+  ggplot2::theme(text = ggplot2::element_text(size = 14),
+                 legend.text = ggplot2::element_text(size = 14),
+                 legend.title = ggplot2::element_text(size = 16)) +
+  ggplot2::scale_y_log10() +
+  ggplot2::annotation_logticks(sides = "l") +
+  ggplot2::scale_color_manual(values = c("gray", "black")) +
+  ggplot2::labs(x = "Clinical Stage",
+                y = "TMeF",
+                color = "TMeF > 98th\nPercentile\nof Non-cancers") +
+  ggplot2::facet_wrap(~sprintf("%s\np-value: %0.1e", label, spearman_pval_adj),
+                      scales = "free_x")
+```
+
+# Figure 5A: TMeF by Stage
+
+```{r boxplot_by_stage, width=6, height=4}
+cat(sprintf("%d solid cancer samples in combined clinical stage plot\n",
+            tmef2023::df_cancer_tmefs_fig_df |>
+              nrow()))
+
+# Plot all labels together.
+tmef2023::df_cancer_tmefs_fig_df |>
+  ggplot2::ggplot(ggplot2::aes(x = stage,
+                               y = tmef)) +
+  ggplot2::geom_boxplot(outlier.shape = NA) +
+  ggplot2::geom_jitter(height = 0, shape = 21,
+                       ggplot2::aes(color = tmef > tmef_nc98)) +
+  ggplot2::theme_bw() +
+  ggplot2::theme(text = ggplot2::element_text(size = 18),
+                 legend.text = ggplot2::element_text(size = 12),
+                 legend.title = ggplot2::element_text(size = 16)) +
+  ggplot2::scale_y_log10() +
+  ggplot2::annotation_logticks(sides = "l") +
+  ggplot2::scale_color_manual(values = c("gray", "black")) +
+  ggplot2::labs(x = "Clinical Stage",
+                y = "TMeF",
+                color = "TMeF > 98th\nPercentile\nof Non-cancers")
+
+tmef_by_stage_spearmann <- cor.test(
+  tmef2023::df_cancer_tmefs_fig_df$tmef,
+  as.numeric(factor(tmef2023::df_cancer_tmefs_fig_df$stage,
+                    levels = c("I", "II", "III", "IV"))),
+  method = "spearman")
+
+cat(sprintf("Spearman's rank correlation: %0.2f, p-value: %0.1e",
+            tmef_by_stage_spearmann$estimate,
+            tmef_by_stage_spearmann$p.value))
+```
+
+# Figure S5: TMeF by Gleason Score in Prostate
+
+```{r prostate_by_gleason_score}
+prostate_tmef_by_gleason_dichot_plot_df <- tmef2023::df_cancer_tmefs_fig_df |>
+  dplyr::filter(label == "Prostate",
+                gleason_grade_group != "Other/missing") |>
+  dplyr::mutate(total_gleason = as.numeric(gleason_grade_primary) +
+                  as.numeric(gleason_grade_secondary),
+                gleason_dichotomized = dplyr::case_when(
+                  total_gleason > 8 ~ "4 + 3 and above",
+                  total_gleason < 6 ~ "3 + 4 and below",
+                  gleason_grade_primary == "4" ~ "4 + 3 and above",
+                  gleason_grade_primary == "3" ~ "3 + 4 and below",
+                  TRUE ~ "other")) |>
+  dplyr::group_by(label, gleason_dichotomized) |>
+  dplyr::mutate(gleason_w_n = sprintf("%s (%d)",
+                                      gleason_dichotomized,
+                                      dplyr::n())) |>
+  dplyr::ungroup()
+
+cat(sprintf("%d cancer samples in prostate by Gleason plots",
+            prostate_tmef_by_gleason_dichot_plot_df |>
+              nrow()))
+
+prostate_tmef_by_gleason_dichot_plot_df |>
+  ggplot2::ggplot(ggplot2::aes(x = gleason_w_n,
+                               y = tmef)) +
+  ggplot2::geom_boxplot(outlier.shape = NA, color = "darkgrey") +
+  ggplot2::geom_jitter(height = 0, shape = 21,
+                       ggplot2::aes(color = tmef > tmef_nc98)) +
+  ggplot2::theme_bw() +
+  ggplot2::scale_y_log10() +
+  ggplot2::annotation_logticks(sides = "l") +
+  ggplot2::scale_color_manual(values = c("gray", "black")) +
+  ggplot2::facet_wrap(~label, scales = "free_x") +
+  ggplot2::labs(x = "Gleason Score",
+                y = "TMeF",
+                color = "TMeF > 98th\nPercentile\nof Non-cancers")
+
+gleason_dichotomized_accurate_tmef_mat <- matrix(
+  c(prostate_tmef_by_gleason_dichot_plot_df |>
+      dplyr::filter(gleason_dichotomized == "4 + 3 and above",
+                    tmef > tmef_nc98) |>
+      nrow(),
+    prostate_tmef_by_gleason_dichot_plot_df |>
+      dplyr::filter(gleason_dichotomized == "4 + 3 and above",
+                    tmef <= tmef_nc98) |>
+      nrow(),
+    prostate_tmef_by_gleason_dichot_plot_df |>
+      dplyr::filter(gleason_dichotomized == "3 + 4 and below",
+                    tmef > tmef_nc98) |>
+      nrow(),
+    prostate_tmef_by_gleason_dichot_plot_df |>
+      dplyr::filter(gleason_dichotomized == "3 + 4 and below",
+                    tmef <= tmef_nc98) |>
+      nrow()),
+  nrow = 2,
+  byrow = FALSE)
+
+gleason_dichotomized_fisher_test <- fisher.test(gleason_dichotomized_accurate_tmef_mat)
+
+cat(sprintf("p-value as assessed by Fisher's Exact Test for Count Data test is %0.4f",
+            gleason_dichotomized_fisher_test$p.value))
+```
+
+# TMeF vs Tumor Size
+
+For cancer types with a reasonable number of samples available, we look at the
+correlation between TMeF and tumor size. The basic underlying biophysical model
+being probed is:
+
+TMeF ~ beta*(tumor size)^n
+
+Log transforming both sides we get:
+log(TMeF) = log(beta) + n*log(tumor size)
+
+We can estimate the value and significance of log(beta) and n using a linear model.
+For a significant association, we would expect both that beta be significantly non-
+zero and that n be in the range of 1-3, with 1 suggesting scaling with a one dimensional
+size measure, 2 suggesting scaling with a surface area, and 3 suggesting scaling with a
+volume measure. In at least one case below, we encounter an n greater than 3. For
+this situation, one plausible biological explanation is that larger tumor size is
+correlated with other unmodeled tumor characteristics associated with high shedding
+such as high mitotic rate.
+
+An important caveat to this analysis is that TMeF has a floor of ~1e-5. Depending on
+the TMeF distribution in any given analysis, this could lead to an observed n that
+is reduced relative to what it would be with a cTAF measure with a larger dynamic range.
+This would also increase the value of the intercept fit.
+
+## Figure S6: Colon Rectum TMeF vs Size
+
+```{r colonrectum_size}
+gtsummary::tbl_regression(lm(log(tmef) ~ microinvasion +
+                               microinvasion:log(tumor_size) +
+                               0,
+                             data = tmef2023::colon_rectum_ccga3_tmef_and_tumor_size_df)) |>
+  gtsummary::as_gt() |>
+  gt::tab_header("Linear Regression")
+
+# Robust linear regression to verify lm above is reasonable.
+gtsummary::tbl_regression(MASS::rlm(log(tmef) ~ microinvasion +
+                                      microinvasion:log(tumor_size) +
+                                      0,
+                                    data = tmef2023::colon_rectum_ccga3_tmef_and_tumor_size_df)) |>
+  gtsummary::as_gt() |>
+  gt::tab_header("Robust Linear Regression")
+
+# Plot size versus TMeF for colorectal to replicate findings of Bredno et al 2021.
+# Histology is not considered here because the vast majority are categorized
+# as adenocarcinoma.
+tmef2023::colon_rectum_ccga3_tmef_and_tumor_size_df |>
+  ggplot2::ggplot(ggplot2::aes(x = tumor_size,
+                               y = tmef)) +
+  ggplot2::geom_point(ggplot2::aes(color = stage),
+                      shape = 21) +
+  ggplot2::geom_smooth(formula = "y ~ x",
+                       method = "lm",
+                       linetype = "dashed",
+                       fill = "#dcdcdc",
+                       color = "gray") +
+  ggplot2::scale_y_log10() +
+  ggplot2::scale_x_log10() +
+  ggplot2::scale_shape_manual(values = c(21, 24)) +
+  ggplot2::theme_bw() +
+  ggplot2::labs(x = "Max Tumor Size (mm)",
+                y = "TMeF",
+                color = "Clinical Stage") +
+  ggplot2::facet_wrap(~microinvasion, scales = "free_x")
+```
+
+## Figure S7: NSCLC TMeF vs Size
+
+```{r lung_size}
+# Without node_involved_bsl as it isn't significant.
+gtsummary::tbl_regression(lm(log(tmef) ~ histology +
+                               histology:log(tumor_size) +
+                               0,
+                             data = tmef2023::lung_ccga3_tmef_and_tumor_size_df)) |>
+  gtsummary::as_gt() |>
+  gt::tab_header("Linear Regression")
+
+# Robust linear regression to verify lm above is reasonable.
+gtsummary::tbl_regression(MASS::rlm(log(tmef) ~ histology +
+                                      histology:log(tumor_size) +
+                                      0,
+                                    data = tmef2023::lung_ccga3_tmef_and_tumor_size_df)) |>
+  gtsummary::as_gt() |>
+  gt::tab_header("Robust Linear Regression")
+
+tmef2023::lung_ccga3_tmef_and_tumor_size_df |>
+  ggplot2::ggplot(ggplot2::aes(x = tumor_size,
+                               y = tmef,
+                               group = histology)) +
+  ggplot2::geom_point(ggplot2::aes(color = stage,
+                                   shape = histology)) +
+  ggplot2::geom_smooth(formula = "y ~ x",
+                       method = "lm",
+                       linetype = "dashed",
+                       fill = "#dcdcdc",
+                       color = "gray") +
+  ggplot2::scale_y_log10() +
+  ggplot2::scale_x_log10() +
+  ggplot2::theme_bw() +
+  ggplot2::scale_shape_manual(values = c(21, 24)) +
+  ggplot2::labs(x = "Max Tumor Size (mm)",
+                y = "TMeF",
+                color = "Clinical Stage",
+                shape = "Histology") +
+  ggplot2::facet_wrap(~histology)
+```
+
+## Figure S8: Breast TMeF vs Size
+```{r breast_size}
+gtsummary::tbl_regression(lm(log(tmef) ~ subtype +
+                               subtype:log(tumor_size) + 0,
+                             data = tmef2023::breast_ccga3_tmef_and_tumor_size_df)) |>
+  gtsummary::as_gt() |>
+  gt::tab_header("Linear Regression")
+
+# Robust linear regression to verify lm above is reasonable.
+gtsummary::tbl_regression(MASS::rlm(log(tmef) ~ subtype +
+                                      subtype:log(tumor_size) + 0,
+                                    data = tmef2023::breast_ccga3_tmef_and_tumor_size_df)) |>
+  gtsummary::as_gt() |>
+  gt::tab_header("Robust Linear Regression")
+
+# Plot faceted on subtype.
+tmef2023::breast_ccga3_tmef_and_tumor_size_df |>
+  ggplot2::ggplot(ggplot2::aes(x = tumor_size,
+                               y = tmef)) +
+  ggplot2::geom_point(ggplot2::aes(color = stage),
+                      shape = 21) +
+  ggplot2::geom_smooth(formula = "y ~ x",
+                       method = "lm",
+                       linetype = "dashed",
+                       fill = "#dcdcdc",
+                       color = "gray") +
+  ggplot2::scale_y_log10() +
+  ggplot2::scale_x_log10() +
+  ggplot2::theme_bw() +
+  ggplot2::labs(x = "Max Tumor Size (mm)",
+                y = "TMeF",
+                color = "Clinical Stage",
+                shape = "Histology") +
+  ggplot2::facet_grid(~subtype)
+```
+
+## Figure S9: Prostate TMeF vs Size
+
+```{r prostate_size}
+gtsummary::tbl_regression(lm(log(tmef) ~ gleason_dichotomized +
+                               lymph_node_involvement +
+                               log(tumor_size):gleason_dichotomized + 0,
+                             data = tmef2023::prostate_ccga3_tmef_and_tumor_size_df)) |>
+  gtsummary::as_gt() |>
+  gt::tab_header("Linear Regression")
+
+# Robust linear regression to verify lm above is reasonable.
+gtsummary::tbl_regression(MASS::rlm(log(tmef) ~ gleason_dichotomized +
+                                      lymph_node_involvement +
+                                      log(tumor_size):gleason_dichotomized + 0,
+                                    data = tmef2023::prostate_ccga3_tmef_and_tumor_size_df)) |>
+  gtsummary::as_gt() |>
+  gt::tab_header("Robust Linear Regression")
+
+tmef2023::prostate_ccga3_tmef_and_tumor_size_df |>
+  ggplot2::ggplot(ggplot2::aes(x = tumor_size,
+                               y = tmef)) +
+  ggplot2::geom_point(ggplot2::aes(shape = histology)) +
+  ggplot2::geom_smooth(formula = "y ~ x",
+                       method = "lm",
+                       linetype = "dashed",
+                       fill = "#dcdcdc",
+                       color = "gray") +
+  ggplot2::scale_shape_manual(values = c(21, 24)) +
+  ggplot2::scale_y_log10() +
+  ggplot2::scale_x_log10() +
+  ggplot2::theme_bw() +
+  ggplot2::labs(x = "Max Tumor Size (mm)",
+                y = "TMeF",
+                color = "Gleason Grade Group",
+                shape = "Histology") +
+  ggplot2::facet_wrap(~gleason_dichotomized)
+```
+
+## Figure S10: Kidney TMeF vs Size
+
+```{r kidney_size}
+gtsummary::tbl_regression(lm(log(tmef) ~ log(tumor_size),
+                             data = tmef2023::kidney_ccga3_tmef_and_tumor_size_df),
+                          intercept = TRUE) |>
+  gtsummary::as_gt() |>
+  gt::tab_header("Linear Regression")
+
+# Robust linear regression to verify lm above is reasonable.
+gtsummary::tbl_regression(MASS::rlm(log(tmef) ~ log(tumor_size),
+                                    data = tmef2023::kidney_ccga3_tmef_and_tumor_size_df),
+                          intercept = TRUE) |>
+  gtsummary::as_gt() |>
+  gt::tab_header("Robust Linear Regression")
+
+tmef2023::kidney_ccga3_tmef_and_tumor_size_df |>
+  ggplot2::ggplot(ggplot2::aes(x = tumor_size,
+                               y = tmef)) +
+  ggplot2::geom_point(ggplot2::aes(color = stage,
+                                   shape = histology)) +
+  ggplot2::geom_smooth(formula = "y ~ x",
+                       method = "lm",
+                       linetype = "dashed",
+                       fill = "#dcdcdc",
+                       color = "gray") +
+  ggplot2::scale_shape_manual(values = c(21, 23, 24, 25)) +
+  ggplot2::scale_y_log10() +
+  ggplot2::scale_x_log10() +
+  ggplot2::theme_bw() +
+  ggplot2::labs(x = "Max Tumor Size (mm)",
+                y = "TMeF",
+                color = "Stage",
+                shape = "Histology")
+```
+
+## Figure S11: Ovary TMeF vs Size
+
+```{r ovary_size}
+gtsummary::tbl_regression(lm(log(tmef) ~ type_ovarian_label +
+                               type_ovarian_label:log(tumor_size) + 0,
+                             data = tmef2023::ovary_ccga3_tmef_and_tumor_size_df),
+                          intercept = TRUE) |>
+  gtsummary::as_gt() |>
+  gt::tab_header("Linear Regression")
+
+# Robust linear regression to verify lm above is reasonable.
+gtsummary::tbl_regression(MASS::rlm(log(tmef) ~ type_ovarian_label +
+                                    type_ovarian_label:log(tumor_size) + 0,
+                                    data = tmef2023::ovary_ccga3_tmef_and_tumor_size_df),
+                          intercept = TRUE) |>
+  gtsummary::as_gt() |>
+  gt::tab_header("Robust Linear Regression")
+
+tmef2023::ovary_ccga3_tmef_and_tumor_size_df  |>
+  ggplot2::ggplot(ggplot2::aes(x = tumor_size,
+                               y = tmef)) +
+  ggplot2::geom_point(ggplot2::aes(color = stage),
+                      shape = 21) +
+  ggplot2::geom_smooth(formula = "y ~ x",
+                       method = "lm",
+                       linetype = "dashed",
+                       fill = "#dcdcdc",
+                       color = "gray") +
+  ggplot2::scale_y_log10() +
+  ggplot2::scale_x_log10() +
+  ggplot2::theme_bw() +
+  ggplot2::labs(x = "Max Tumor Size (mm)",
+                y = "TMeF",
+                color = "Stage") +
+  ggplot2::facet_wrap(~type_ovarian_label, scales = "free_x")
+```
+
+## Figure S12: Uterus TMeF vs Size
+```{r uterus_size}
+# Remove node_involved_bsl as it is not significant above.
+gtsummary::tbl_regression(lm(log(tmef) ~
+                               log(tumor_size) + 1,
+                             data = tmef2023::uterus_ccga3_tmef_and_tumor_size_df),
+                          intercept = TRUE) |>
+  gtsummary::as_gt() |>
+  gt::tab_header("Linear Regression")
+
+# Robust linear regression to verify lm above is reasonable.
+gtsummary::tbl_regression(MASS::rlm(log(tmef) ~
+                                      log(tumor_size) + 1,
+                                    data = tmef2023::uterus_ccga3_tmef_and_tumor_size_df),
+                          intercept = TRUE) |>
+  gtsummary::as_gt() |>
+  gt::tab_header("Robust Linear Regression")
+
+tmef2023::uterus_ccga3_tmef_and_tumor_size_df |>
+  dplyr::filter(histology %in% c("Endometrioid", "Mullerian", "Serous")) |>
+  ggplot2::ggplot(ggplot2::aes(x = tumor_size,
+                               y = tmef)) +
+  ggplot2::geom_point(ggplot2::aes(color = stage,
+                                   shape = histology)) +
+  ggplot2::geom_smooth(formula = "y ~ x",
+                       method = "lm",
+                       linetype = "dashed",
+                       fill = "#dcdcdc",
+                       color = "gray") +
+  ggplot2::scale_shape_manual(values = c(21, 23, 24)) +
+  ggplot2::scale_y_log10() +
+  ggplot2::scale_x_log10() +
+  ggplot2::theme_bw() +
+  ggplot2::labs(x = "Max Tumor Size (mm)",
+                y = "TMeF",
+                color = "Stage",
+                shape = "Histology")
+```
+
+# TMeF Versus Survival
+
+```{r forest_plot_helper_funcs}
+generate_survival_odds_ratio_df <- function(surv_model) {
+  surv_model_summary <- summary(surv_model)
+  surv_model_summary$coefficients |>
+    as.data.frame(row.names = NULL) |>
+    dplyr::mutate(variable = rownames(surv_model_summary$coefficients)) |>
+    dplyr::inner_join(surv_model_summary$conf.int |>
+                        as.data.frame(row.names = NULL) |>
+                        dplyr::mutate(variable = rownames(surv_model_summary$conf.int)),
+                      by = "variable") |>
+    dplyr::mutate(index = 1:dplyr::n()) |>
+    dplyr::rename(odds_ratio = `exp(coef).y`,
+                  odds_ratio_lcb = `lower .95`,
+                  odds_ratio_ucb = `upper .95`,
+                  pvalue = `Pr(>|z|)`) |>
+    dplyr::select(variable, index, odds_ratio, odds_ratio_lcb, odds_ratio_ucb,
+                  pvalue) |>
+    dplyr::mutate(variable = gsub(pattern = "label", replacement = "", x = variable),
+                  variable = gsub(pattern = "tmef_grp", replacement = "", x = variable),
+                  variable = gsub(pattern = "stage", replacement = "Stage ", x = variable))
+}
+
+odds_ratio_plt <- function(survival_odds_ratio_df, title = "") {
+  survival_odds_ratio_df |>
+    ggplot2::ggplot(ggplot2::aes(y = index, x = odds_ratio)) +
+      ggplot2::geom_point(shape = 18, size = 5) +
+      ggplot2::geom_errorbarh(ggplot2::aes(xmin = odds_ratio_lcb,
+                                           xmax = odds_ratio_ucb),
+                              height = 0.25) +
+      ggplot2::geom_vline(xintercept = 1, color = "red", linetype = "dashed",
+                          cex = 1, alpha = 0.5) +
+      ggplot2::scale_y_continuous(name = "", breaks=1:length(survival_odds_ratio_df$variable),
+                                  labels = survival_odds_ratio_df$variable, trans = "reverse") +
+      ggplot2::xlab("Odds Ratio (95% CI)") +
+      ggplot2::ylab("") +
+      ggplot2::theme_bw() +
+      ggplot2::theme(panel.border = ggplot2::element_blank(),
+                     panel.background = ggplot2::element_blank(),
+                     panel.grid.major = ggplot2::element_blank(),
+                     panel.grid.minor = ggplot2::element_blank(),
+                     axis.line = ggplot2::element_line(colour = "black"),
+                     axis.text.y = ggplot2::element_text(size = 12, colour = "black"),
+                     axis.text.x.bottom = ggplot2::element_text(size = 12, colour = "black"),
+                     axis.title.x = ggplot2::element_text(size = 12, colour = "black")) +
+    ggplot2::ggtitle(title)
+}
+
+surv_table_base_plt <- function(survival_odds_ratio_df) {
+  survival_odds_ratio_df |>
+    ggplot2::ggplot(ggplot2::aes(y = variable)) +
+    ggplot2::ylab(NULL) +
+    ggplot2::xlab("") +
+    ggplot2::theme(plot.title = ggplot2::element_text(hjust = 0.5, size=12),
+                   axis.text.x = ggplot2::element_text(color="white", hjust = -3, size = 25),
+                   axis.line = ggplot2::element_blank(),
+                   axis.text.y = ggplot2::element_blank(),
+                   axis.ticks = ggplot2::element_blank(),
+                   axis.title.y = ggplot2::element_blank(),
+                   legend.position = "none",
+                   panel.background = ggplot2::element_blank(),
+                   panel.border = ggplot2::element_blank(),
+                   panel.grid.major = ggplot2::element_blank(),
+                   panel.grid.minor = ggplot2::element_blank(),
+                   plot.background = ggplot2::element_blank())
+}
+
+odds_ratio_tbl_plt <- function(survival_odds_ratio_df) {
+  survival_odds_ratio_df |>
+    surv_table_base_plt() +
+    ggplot2::labs(title = "space") +
+    ggplot2::geom_text(ggplot2::aes(
+      y = rev(index),
+      x = 1,
+      label = sprintf("%0.1f", round(odds_ratio, digits = 1))), size = 4) +
+    ggplot2::ggtitle("OR")
+}
+
+odds_ratio_ci_tbl_plt <- function(survival_odds_ratio_df) {
+  survival_odds_ratio_df |>
+    surv_table_base_plt() +
+    ggplot2::geom_text(ggplot2::aes(
+      y = rev(index),
+      x = 1,
+      label = sprintf("%0.1f - %0.1f",
+                      round(odds_ratio_lcb, digits = 1),
+                      round(odds_ratio_ucb, digits = 1))),
+      size = 4) +
+    ggplot2::ggtitle("95% CI")
+}
+
+forest_plot <- function(surv_model, return_grob = TRUE, title = "") {
+  surv_model_odds_ratios <- surv_model |>
+    generate_survival_odds_ratio_df()
+
+  this_grob <- gridExtra::arrangeGrob(
+    odds_ratio_plt(surv_model_odds_ratios, title = title),
+    odds_ratio_tbl_plt(surv_model_odds_ratios),
+    odds_ratio_ci_tbl_plt(surv_model_odds_ratios),
+    layout_matrix = matrix(c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 3, 3), nrow = 1))
+
+  if (return_grob) {
+    return(this_grob)
+  } else {
+    return(gridExtra::grid.arrange(this_grob))
+  }
+}
+```
+
+```{r survival_plot_funcs}
+get_surv_plot <- function(fit, data, legend, labs,
+                          palette, title, size, xlim,
+                          risktablefontsize = 5,
+                          fontsize = 16) {
+  surv_plot <- survminer::ggsurvplot(fit = fit,
+                                     data = data,
+                                     risk.table = TRUE,
+                                     axes.offset = FALSE,
+                                     risk.table.y.text = FALSE,
+                                     break.time.by = 4,
+                                     xlim = xlim,
+                                     legend = legend,
+                                     legend.title = "",
+                                     legend.labs = labs,
+                                     palette = palette,
+                                     font.main = c(16, "bold"),
+                                     xlab = "Time (Months)",
+                                     ylab = "Survival Probability",
+                                     conf.int = FALSE,
+                                     pval = FALSE,
+                                     tables.theme = survminer::theme_cleantable(),
+                                     risk.table.title = "Number at Risk",
+                                     risk.table.fontsize = risktablefontsize,
+                                     size = .5)
+  surv_plot$plot <- surv_plot$plot +
+    ggplot2::labs(title = title) +
+    ggplot2::scale_x_continuous(breaks = seq(0, 40, 4),
+                                expand = c(0, 0)) + # set max to 40-month
+    ggplot2::scale_y_continuous(limits = c(0, 1.05), expand = c(0, 0)) +
+    ggplot2::theme(plot.title = ggplot2::element_text(hjust = 0.5),
+                   legend.text = ggplot2::element_text(size = size),
+                   legend.background = ggplot2::element_rect(fill = "transparent"))
+  surv_plot$table <- surv_plot$table +
+    ggplot2::labs(x = "Number at Risk", y = NULL, title = "")
+  # Helper function to customize plot labels
+  # nolint start
+  customize_labels <- function(p,
+                               font.title = NULL,
+                               font.subtitle = NULL,
+                               font.caption = NULL,
+                               font.x = NULL,
+                               font.y = NULL,
+                               font.xtickslab = NULL,
+                               font.ytickslab = NULL,
+                               font.legendtitle = NULL,
+                               font.legendtext = NULL) {
+    original.p <- p
+    if (ggplot2::is.ggplot(original.p))
+      list.plots <- list(original.p)
+    else if (is.list(original.p))
+      list.plots <- original.p
+    else
+      stop("Can't handle an object of class ", class (original.p))
+    .set_font <- function(font) {
+      font <- ggpubr:::.parse_font(font)
+      ggtext::element_markdown (
+        size = font$size,
+        face = font$face,
+        colour = font$color
+      )
+    }
+    for (i in 1:length(list.plots)) {
+      p <- list.plots[[i]]
+      if (ggplot2::is.ggplot(p)) {
+        if (!is.null(font.title))
+          p <- p + ggplot2::theme(plot.title = .set_font(font.title))
+        if (!is.null(font.subtitle))
+          p <- p + ggplot2::theme(plot.subtitle = .set_font(font.subtitle))
+        if (!is.null(font.caption))
+          p <- p + ggplot2::theme(plot.caption = .set_font(font.caption))
+        if (!is.null(font.x))
+          p <- p + ggplot2::theme(axis.title.x = .set_font(font.x))
+        if (!is.null(font.y))
+          p <- p + ggplot2::theme(axis.title.y = .set_font(font.y))
+        if (!is.null(font.xtickslab))
+          p <- p + ggplot2::theme(axis.text.x = .set_font(font.xtickslab))
+        if (!is.null(font.ytickslab))
+          p <- p + ggplot2::theme(axis.text.y = .set_font(font.ytickslab))
+        if (!is.null(font.legendtitle))
+          p <- p + ggplot2::theme(legend.title = .set_font(font.legendtitle))
+        if (!is.null(font.legendtext))
+          p <- p + ggplot2::theme(legend.text = .set_font(font.legendtext))
+        list.plots[[i]] <- p
+      }
+    }
+    if (ggplot2::is.ggplot(original.p))
+      list.plots[[1]]
+    else
+      list.plots
+  }
+  # nolint end
+
+  g <- customize_labels(
+    surv_plot,
+    font.title    = c(fontsize),
+    font.x        = c(fontsize),
+    font.y        = c(fontsize),
+    font.xtickslab = c(fontsize),
+    font.ytickslab = c(fontsize),
+    font.legendtitle = c(fontsize * 14 / 16),
+    font.legendtext = c(fontsize * 14 / 16)
+  )
+
+  g$table <- g$table + ggplot2::theme(axis.text.x = ggplot2::element_blank())
+  return(g)
+}
+
+# Plotting function modified from analysis/pdx/ccga3/survival_curves/01_draw_survival_curves.Rmd.
+get_km_plots <- function(df, plot_name,
+                         legend = c(0.13, 0.3),
+                         risktablefontsize = 5,
+                         fontsize = 16) {
+  cat(sprintf("fitting survival model for %d unique participants",
+              length(unique(df$participant_id))))
+  fit <- survival::survfit(survival::Surv(overall_survival, censored) ~ tmef_grp,
+                           data = df)
+  color_palette_df <- data.frame(tmef_grp = levels(df$tmef_grp),
+                                 grp_color = c("#a1dab4", "#41b6c4", "#2c7fb8", "#253494"))
+  color_palette_df <- color_palette_df |>
+    dplyr::filter(tmef_grp %in% df$tmef_grp)
+  splot <- get_surv_plot(fit = fit,
+                         data = df,
+                         legend = legend,
+                         labs = color_palette_df$tmef_grp,
+                         palette = color_palette_df$grp_color,
+                         title = plot_name,
+                         size = 10,
+                         xlim = c(0, max(df$overall_survival, na.rm = TRUE) + 2),
+                         risktablefontsize = risktablefontsize,
+                         fontsize = fontsize)
+  sur_tmef_grp <- survival::coxph(survival::Surv(overall_survival, censored) ~ tmef_grp,
+                                data = df)
+  return(list(splot = splot,
+              sur_tmef_grp = sur_tmef_grp))
+}
+
+# Helper function to render KM plot and regression summary tables in a list.
+render_km_plots <- function(km_plots, label = "") {
+  list(km_plots$splot,
+       gtsummary::tbl_regression(km_plots$sur_tmef_grp,
+                                 exponentiate = TRUE) |>
+         gtsummary::add_n() |>
+         gtsummary::add_nevent() |>
+         gtsummary::as_gt() |>
+         gt::tab_header(label))
+}
+```
+
+## Figure 5B and 5C: Survival All Cancers
+
+```{r surv_all_cancers}
+# Survival model with TMeF group.
+ls_surv_all_cancers <- tmef2023::ccga3_tmef_survival_df |>
+  get_km_plots("All Cancers", legend = c(0.17, 0.3))
+
+surv_all_cancers_plots <- render_km_plots(ls_surv_all_cancers, "All Cancers")
+
+surv_all_cancers_plots
+
+# Model with stage and cancer type label in addition to TMeF group.
+surv_fit_all_cancers_stage_label_and_tmef_grp <- survival::coxph(
+  survival::Surv(overall_survival, censored) ~ stage + label + tmef_grp,
+  data = tmef2023::ccga3_tmef_survival_df)
+
+gtsummary::tbl_regression(x = surv_fit_all_cancers_stage_label_and_tmef_grp,
+                          exponentiate = TRUE) |>
+  gtsummary::add_n() |>
+  gtsummary::add_nevent() |>
+  gtsummary::as_gt()
+
+forest_plot(surv_fit_all_cancers_stage_label_and_tmef_grp, return_grob = FALSE,
+            title = "Combined Cancers")
+```
+
+## Figure S13: Survival by Cancer Type
+
+```{r surv_each_cancer, fig.width=25, fig.height=35}
+surv_labels_grteq20 <- tmef2023::ccga3_tmef_survival_df |>
+  dplyr::group_by(label) |>
+  dplyr::count() |>
+  dplyr::filter(n >= 20) |>
+  dplyr::pull(label) |>
+  sort()
+
+ls_km_plots_by_cancer <- lapply(
+  surv_labels_grteq20,
+  function(cancer_type) {
+    ls_surv <- tmef2023::ccga3_tmef_survival_df |>
+      dplyr::filter(label == cancer_type) |>
+      get_km_plots(cancer_type,
+                   legend = c(0.24, 0.28),
+                   fontsize = 24,
+                   risktablefontsize = 6)
+    ls_surv$cancer_type <- cancer_type
+    ls_surv
+})
+
+arranged_by_cancer_plot <- survminer::arrange_ggsurvplots(
+  lapply(ls_km_plots_by_cancer, function(ls_obj) { ls_obj$splot }),
+  ncol = 2,
+  nrow = 4,
+  risk.table.height = 0.25,
+  surv.plot.height = 0.8,
+  print = TRUE)
+```
+
+# Reproducibility
+
+## Session info
+
+```{r session_info}
+pander::pander(sessionInfo())
+```

@@ -1,0 +1,1435 @@
+cancer_id	stage_w_n	tmef	tmef_nc98	label	stage	gleason_grade_group	gleason_grade_primary	gleason_grade_secondary
+cancer_cfdna_1235	II (145)	1.08582e-5	6.93495e-5	Prostate	II	Other/missing	4	4
+cancer_cfdna_945	I (47)	1.82772e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_961	II (145)	1.78564e-5	6.93495e-5	Prostate	II	Other/missing	4	3
+cancer_cfdna_966	I (75)	2.2556e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_967	II (145)	3.79408e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_971	I (75)	7.98719e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_973	I (47)	3.06308e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_982	I (75)	2.53137e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_986	I (58)	9.0306e-6	6.93495e-5	Prostate	I	Other/missing	3	3
+cancer_cfdna_992	I (75)	1.385266e-4	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1091	II (24)	9.96001e-5	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1101	I (161)	2.24245e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1110	II (145)	1.00957e-5	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_1114	I (161)	1.38109e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_327	IV (74)	0.0032578445	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1137	II (108)	4.100648e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1153	I (58)	8.3615e-6	6.93495e-5	Prostate	I	Other/missing	3	3
+cancer_cfdna_1165	III (12)	4.09569e-5	1.041925e-4	Uterus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_343	III (19)	0.0044852225	1.948553e-4	Ovary	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1180	III (28)	6.902971e-4	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1184	I (161)	1.04589e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1202	III (37)	2.1729e-5	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1207	II (108)	9.0357e-6	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1208	I (75)	1.59026e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_367	IV (23)	0.0256966445	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_372	III (12)	0.0034017326	1.041925e-4	Uterus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_376	III (16)	0.0807441392	1.023644e-4	NEC of Lung and Other Organs	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1244	II (145)	6.777e-6	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_1285	II (108)	9.28635e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_392	II (108)	0.0129842093	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1308	I (9)	8.059756e-4	1.012548e-4	Stomach and Esophagus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1309	I (75)	1.56566e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1311	II (13)	4.146483e-4	1.012548e-4	Stomach and Esophagus	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1337	I (161)	1.59782e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1374	III (12)	2.59279e-5	1.041925e-4	Uterus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1376	II (108)	1.33947e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_429	II (108)	0.0110308838	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1398	I (47)	2.1689e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1400	I (161)	2.18427e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1418	I (161)	1.48503e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_441	IV (49)	0.0012784875	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1438	I (161)	2.25627e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_446	II (108)	0.0019563217	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1443	I (75)	1.93356e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_450	III (19)	0.0026939285	1.012548e-4	Stomach and Esophagus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1467	I (161)	1.06859e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1468	III (19)	2.03828e-4	1.012548e-4	Stomach and Esophagus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1478	II (145)	7.8846e-6	6.93495e-5	Prostate	II	Other/missing	4	3
+cancer_cfdna_1484	I (39)	2.55291e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_503	I (10)	8.4195e-6	9.34104e-5	Head and Neck	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_508	I (161)	3.213511e-4	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_514	II (145)	1.47122e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_515	I (13)	8.02508e-5	1.948553e-4	Ovary	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_518	IV (31)	9.466627e-4	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_519	II (4)	2.085022e-4	1.023644e-4	NEC of Lung and Other Organs	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_522	I (58)	4.49481e-5	6.93495e-5	Prostate	I	Other/missing	3	4
+cancer_cfdna_542	II (145)	1.33731e-5	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_576	I (161)	2.5076e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_577	II (4)	1.795804e-4	1.023644e-4	NEC of Lung and Other Organs	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_584	I (161)	2.24645e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_41	II (23)	0.0058692133	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_601	III (31)	1.21113e-5	6.93495e-5	Prostate	III	Other/missing	3	4
+cancer_cfdna_629	I (161)	1.02626e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_699	I (75)	3.74708e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_132	IV (31)	0.0222847674	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_722	I (75)	2.83301e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_146	III (28)	0.0122699315	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_760	I (75)	1.51306e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_800	III (28)	4.999148e-4	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_187	III (16)	0.0137604921	1.023644e-4	NEC of Lung and Other Organs	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_192	II (23)	0.004460654	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_811	II (108)	7.6146e-6	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_814	II (3)	6.834973e-4	7.5803399999999993e-05	Cervix	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_818	I (75)	4.28746e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_212	III (28)	0.0176108901	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_825	III (12)	2.03484e-5	1.041925e-4	Uterus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_844	II (145)	6.8973e-6	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_857	II (145)	1.0612e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_858	I (58)	4.72231e-5	6.93495e-5	Prostate	I	I	3	4
+cancer_cfdna_236	IV (49)	0.0227338051	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_242	II (13)	0.0015167619	1.012548e-4	Stomach and Esophagus	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_892	III (37)	1.910353e-4	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_893	IV (74)	6.65361e-5	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_261	III (19)	0.0030640981	1.948553e-4	Ovary	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_915	I (47)	1.01869e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_916	II (145)	8.8053e-6	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_917	I (161)	1.01856e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_918	II (108)	1.27829e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_262	IV (34)	0.0644946022	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_263	III (37)	0.0066907488	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_919	I (75)	2.22701e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_920	I (75)	1.56484e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_921	II (145)	1.2617e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_922	I (58)	6.717e-6	6.93495e-5	Prostate	I	III	4	3
+cancer_cfdna_923	III (19)	1.43141e-5	1.012548e-4	Stomach and Esophagus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_924	II (145)	1.36767e-5	6.93495e-5	Prostate	II	Other/missing	5	3
+cancer_cfdna_925	I (161)	7.1253e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_926	I (161)	7.7202e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_927	II (145)	2.75807e-5	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_264	IV (31)	0.0214789161	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_928	III (3)	4.428142e-4	1.183757e-4	Bladder and Urothelial Tract	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_929	II (145)	1.58388e-5	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_930	II (145)	4.26472e-5	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_931	II (24)	1.19902e-5	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_932	I (58)	1.67195e-5	6.93495e-5	Prostate	I	I	3	3
+cancer_cfdna_265	IV (74)	0.0154449824	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_933	II (145)	1.54648e-5	6.93495e-5	Prostate	II	I	3	3
+cancer_cfdna_934	II (145)	1.20568e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_935	II (5)	3.94556e-5	1.376508e-4	Kidney	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_936	II (23)	1.70433e-5	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_937	I (161)	1.1208e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_266	IV (23)	0.0686696357	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_938	II (108)	8.0765e-6	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_267	IV (10)	0.0077611833	1.948553e-4	Ovary	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_939	II (145)	2.60811e-5	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_940	I (75)	2.05921e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_941	I (58)	1.39585e-5	6.93495e-5	Prostate	I	II	3	4
+cancer_cfdna_942	II (108)	1.12526e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_268	IV (6)	0.0064099667	7.8737e-5	Bone and Soft Tissue	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_943	I (161)	2.66012e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_944	II (108)	2.57974e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_269	III (45)	0.0343954811	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_946	I (58)	9.909e-6	6.93495e-5	Prostate	I	I	3	3
+cancer_cfdna_947	III (31)	1.46937e-5	6.93495e-5	Prostate	III	Other/missing	4	3
+cancer_cfdna_948	II (5)	2.38169e-5	1.376508e-4	Kidney	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_949	I (47)	2.15402e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_950	III (19)	9.055669e-4	1.948553e-4	Ovary	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_270	III (6)	0.0031253934	7.8737e-5	Bone and Soft Tissue	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_271	IV (74)	0.0154871992	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_951	II (145)	8.9199e-6	6.93495e-5	Prostate	II	Other/missing	4	3
+cancer_cfdna_952	I (75)	1.086338e-4	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_953	II (145)	1.56162e-5	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_954	III (12)	1.616409e-4	1.041925e-4	Uterus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_955	I (58)	1.02672e-5	6.93495e-5	Prostate	I	II	3	4
+cancer_cfdna_956	I (58)	4.7517e-6	6.93495e-5	Prostate	I	II	3	4
+cancer_cfdna_957	II (1)	3.46357e-5	9.30823e-5	Melanocytic Lineage	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_958	II (13)	2.65514e-5	1.012548e-4	Stomach and Esophagus	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_959	I (58)	8.201e-6	6.93495e-5	Prostate	I	I	3	3
+cancer_cfdna_272	II (24)	0.0246576945	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_960	II (23)	0.0012392668	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_962	I (58)	1.45325e-5	6.93495e-5	Prostate	I	I	3	3
+cancer_cfdna_273	II (6)	0.0017300947	1.183757e-4	Bladder and Urothelial Tract	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_963	I (58)	8.2384e-6	6.93495e-5	Prostate	I	I	3	3
+cancer_cfdna_964	II (145)	7.2022e-6	6.93495e-5	Prostate	II	Other/missing	4	3
+cancer_cfdna_965	II (145)	1.91929e-5	6.93495e-5	Prostate	II	Other/missing	4	3
+cancer_cfdna_274	II (24)	0.0017367235	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_968	II (145)	2.60596e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_969	II (145)	1.18446e-5	6.93495e-5	Prostate	II	V	4	5
+cancer_cfdna_970	II (145)	1.06666e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_275	IV (14)	0.0237603298	8.69931e-5	Breast	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_972	II (145)	1.24075e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_276	IV (34)	0.16021748189999999	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_277	IV (32)	0.0516224176	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_974	I (58)	1.48208e-5	6.93495e-5	Prostate	I	II	3	4
+cancer_cfdna_975	I (161)	1.32338e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_976	I (58)	1.59255e-5	6.93495e-5	Prostate	I	Other/missing	3	3
+cancer_cfdna_977	II (145)	2.06424e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_978	II (145)	1.19184e-5	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_979	I (161)	1.06876e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_980	II (145)	1.19738e-5	6.93495e-5	Prostate	II	IV	4	4
+cancer_cfdna_981	IV (3)	4.913815e-4	1.041925e-4	Uterus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_983	I (58)	1.38652e-5	6.93495e-5	Prostate	I	Other/missing	3	3
+cancer_cfdna_984	I (161)	1.1866e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_278	IV (14)	0.079045364	8.69931e-5	Breast	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_279	IV (74)	0.02683013319999999	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_985	II (145)	3.81155e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_987	II (108)	4.80203e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_988	I (161)	8.4131e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_989	I (58)	1.44824e-5	6.93495e-5	Prostate	I	I	3	3
+cancer_cfdna_990	II (145)	7.4639e-6	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_280	II (108)	0.0073922615	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_991	II (108)	2.1991e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_993	I (22)	6.6752e-6	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_281	IV (23)	0.1523249811	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_282	IV (1)	0.1056552761	7.5803399999999993e-05	Cervix	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_283	IV (31)	0.0121120842	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_994	I (75)	2.13692e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_995	III (31)	1.68818e-5	6.93495e-5	Prostate	III	Other/missing	3	4
+cancer_cfdna_996	II (145)	7.6917e-6	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_997	I (161)	1.18506e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_998	II (108)	1.27346e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_999	II (145)	1.53514e-5	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_284	IV (16)	0.0021104524	6.93495e-5	Prostate	IV	IV	4	4
+cancer_cfdna_1000	I (5)	1.95687e-5	1.183757e-4	Bladder and Urothelial Tract	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1001	II (145)	1.46374e-5	6.93495e-5	Prostate	II	Other/missing	3	3
+cancer_cfdna_1002	IV (16)	3.567684e-4	6.93495e-5	Prostate	IV	V	5	4
+cancer_cfdna_1003	II (145)	1.57788e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_1004	I (75)	4.67469e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_285	IV (10)	0.0273268944	1.948553e-4	Ovary	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1005	III (19)	3.82975e-5	1.948553e-4	Ovary	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1006	I (8)	3.291972e-4	7.8737e-5	Bone and Soft Tissue	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_286	III (45)	0.0277593049	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1007	II (145)	2.06319e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_1008	I (161)	3.00057e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1009	II (108)	9.9197e-6	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1010	IV (34)	8.477805e-4	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1011	III (12)	2.35824e-5	1.041925e-4	Uterus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1012	I (161)	1.2014e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1013	II (108)	1.37716e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1014	II (145)	1.03036e-5	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_1015	II (145)	1.27053e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_1016	II (145)	1.30894e-5	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_287	IV (16)	0.1198958006	6.93495e-5	Prostate	IV	Other/missing	4	5
+cancer_cfdna_1017	II (24)	6.69748e-4	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1018	II (145)	2.96747e-5	6.93495e-5	Prostate	II	Other/missing	4	3
+cancer_cfdna_1019	I (39)	1.97036e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1020	IV (3)	4.023723e-4	1.041925e-4	Uterus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1021	I (39)	2.01564e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1022	I (75)	1.69938e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1023	I (161)	1.40761e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1024	II (145)	1.28088e-5	6.93495e-5	Prostate	II	Other/missing	4	3
+cancer_cfdna_1025	III (28)	1.3235e-5	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1026	I (58)	1.11855e-5	6.93495e-5	Prostate	I	Other/missing	3	3
+cancer_cfdna_1027	II (108)	8.8968e-6	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1028	III (28)	1.696979e-4	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_288	II (108)	0.0197983698	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1029	I (161)	4.18712e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1030	I (75)	1.7313e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1031	I (13)	5.02131e-5	1.948553e-4	Ovary	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1032	II (145)	2.51455e-5	6.93495e-5	Prostate	II	Other/missing	4	3
+cancer_cfdna_1033	I (161)	9.4519e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1034	I (161)	2.609312e-4	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1035	I (75)	2.98233e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_289	III (12)	0.0101150169	1.041925e-4	Uterus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1036	I (13)	4.98069e-5	1.948553e-4	Ovary	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1037	I (47)	2.09069e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1038	I (75)	2.30141e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_290	I (8)	0.0030761556	7.5803399999999993e-05	Cervix	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1039	II (145)	9.4103e-6	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_1040	I (47)	3.86586e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1041	I (161)	8.2948e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1042	I (161)	9.0587e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1043	I (5)	1.87538e-5	1.183757e-4	Bladder and Urothelial Tract	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1044	I (58)	1.16903e-5	6.93495e-5	Prostate	I	Other/missing	3	4
+cancer_cfdna_1045	I (161)	2.17541e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1046	II (145)	3.04792e-5	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_291	IV (10)	0.0144331439	1.948553e-4	Ovary	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1047	I (161)	2.09374e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1048	III (4)	3.59185e-5	1.376508e-4	Kidney	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1049	II (145)	1.492e-5	6.93495e-5	Prostate	II	II	4	3
+cancer_cfdna_1050	II (108)	9.0556e-6	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_292	IV (23)	0.1029473764	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1051	I (161)	1.29412e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_293	III (28)	0.0049567172	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_294	IV (34)	0.0015638121	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1052	III (4)	5.23681e-5	1.376508e-4	Kidney	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1053	I (8)	2.02709e-5	7.8737e-5	Bone and Soft Tissue	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1054	IV (13)	5.00591e-5	1.376508e-4	Kidney	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1055	I (58)	1.17433e-5	6.93495e-5	Prostate	I	I	4	5
+cancer_cfdna_1056	I (47)	6.23931e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_295	I (75)	0.0025101139	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1057	I (161)	9.2206e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1058	I (75)	1.77836e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_296	IV (16)	0.127466109	6.93495e-5	Prostate	IV	Other/missing	5	5
+cancer_cfdna_1059	I (161)	1.16697e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_297	III (45)	0.0976752046	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1060	II (24)	4.95263e-5	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_298	II (108)	0.0356373501	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1061	I (58)	1.63692e-5	6.93495e-5	Prostate	I	I	3	3
+cancer_cfdna_1062	II (108)	6.408892e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_299	II (2)	0.0017266152	6.13702e-5	Anus	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1063	II (145)	1.28914e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_1064	III (12)	4.46167e-5	1.041925e-4	Uterus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1065	II (145)	5.06322e-5	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_1066	I (58)	9.7138e-6	6.93495e-5	Prostate	I	Other/missing	3	3
+cancer_cfdna_1067	I (161)	1.22285e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_300	II (108)	0.0020992886	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_301	IV (23)	0.1599871997	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1068	I (8)	8.761637e-4	7.8737e-5	Bone and Soft Tissue	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1069	I (75)	1.47232e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1070	I (75)	3.06638e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1071	IV (13)	4.19934e-5	1.376508e-4	Kidney	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_302	III (28)	0.0253674204	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1072	I (161)	3.72854e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1073	II (108)	2.33703e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1074	I (58)	1.13085e-5	6.93495e-5	Prostate	I	II	3	4
+cancer_cfdna_1075	I (58)	1.01202e-5	6.93495e-5	Prostate	I	I	3	3
+cancer_cfdna_1076	II (145)	1.46644e-5	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_1077	II (145)	1.24356e-5	6.93495e-5	Prostate	II	Other/missing	4	3
+cancer_cfdna_1078	I (75)	2.10731e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1079	I (161)	8.318781e-4	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1080	I (22)	6.103931e-4	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_303	IV (23)	0.0940133334	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1081	II (13)	7.29805e-5	1.012548e-4	Stomach and Esophagus	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1082	II (145)	1.57506e-5	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_1083	III (19)	0.0011590975	1.012548e-4	Stomach and Esophagus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1084	I (9)	2.21087e-5	1.012548e-4	Stomach and Esophagus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1085	I (161)	9.7604e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_304	IV (49)	0.0800066173	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1086	I (161)	7.7136e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_305	II (108)	0.0029209509	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1087	II (5)	2.23447e-5	1.041925e-4	Uterus	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_306	IV (3)	0.0184797518	9.30823e-5	Melanocytic Lineage	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1088	I (58)	1.43214e-5	6.93495e-5	Prostate	I	Other/missing	3	3
+cancer_cfdna_1089	II (108)	1.02221e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1090	III (28)	4.400381e-4	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_307	III (28)	0.0071272552	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_308	III (4)	0.0531862579	8.51642e-5	Liver and Bile Duct	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1092	II (108)	1.74323e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_309	III (28)	0.0032949063	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1093	I (75)	1.005806e-4	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1094	II (145)	1.68636e-5	6.93495e-5	Prostate	II	Other/missing	4	3
+cancer_cfdna_1095	I (161)	1.07133e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1096	IV (14)	2.778645e-4	8.69931e-5	Breast	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1097	II (108)	2.19278e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_310	II (108)	0.0046601239	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1098	III (15)	1.69461e-5	1.029895e-4	Pancreas and Gallbladder	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1099	II (145)	3.60182e-5	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_1100	I (39)	3.03537e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1102	IV (3)	1.847247e-4	1.041925e-4	Uterus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_311	IV (31)	0.003193836	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_312	III (12)	0.0642636759	1.041925e-4	Uterus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1103	I (47)	1.49945e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1104	II (108)	2.0999e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1105	III (45)	2.86304e-5	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_313	I (75)	0.0032985982	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1106	I (161)	6.5021e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1107	I (75)	2.8446e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_314	III (45)	0.0011797676	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_315	III (16)	0.0129751042	1.023644e-4	NEC of Lung and Other Organs	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1108	I (161)	7.6305e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1109	II (108)	6.22851e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1111	I (161)	8.475e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_316	IV (31)	0.0034576605	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1112	III (28)	4.44033e-5	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1113	I (161)	1.63026e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_317	III (37)	0.124679603	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_318	IV (74)	0.0047501695	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1115	I (13)	3.1758e-5	1.948553e-4	Ovary	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1116	I (75)	1.12151e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1117	I (161)	9.5433e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_319	III (16)	0.1700589571	1.023644e-4	NEC of Lung and Other Organs	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1118	II (6)	9.5602e-6	1.183757e-4	Bladder and Urothelial Tract	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1119	II (108)	1.884143e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1120	I (5)	2.22581e-4	1.183757e-4	Bladder and Urothelial Tract	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1121	IV (13)	6.656438e-4	1.376508e-4	Kidney	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_320	II (108)	0.0035444675	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_321	IV (32)	0.0067302832	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1122	II (145)	1.104675e-4	6.93495e-5	Prostate	II	V	4	5
+cancer_cfdna_1123	I (75)	0.0010461788	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_322	III (16)	0.0060804112	1.023644e-4	NEC of Lung and Other Organs	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_323	III (19)	0.0059454512	1.012548e-4	Stomach and Esophagus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1124	I (75)	1.08166e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1125	II (145)	1.20171e-5	6.93495e-5	Prostate	II	Other/missing	3	3
+cancer_cfdna_324	III (28)	0.0047132089	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1126	I (161)	1.02993e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1127	III (45)	3.34813e-5	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1128	I (161)	1.29287e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_325	IV (13)	0.0144312059	1.376508e-4	Kidney	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_326	IV (34)	0.039351673	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1129	I (161)	2.35185e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1130	I (75)	3.93608e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1131	I (10)	1.263963e-4	9.34104e-5	Head and Neck	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_328	IV (34)	0.0766972555	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1132	I (161)	1.14211e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1133	II (10)	4.298226e-4	1.029895e-4	Pancreas and Gallbladder	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_329	III (37)	0.0024901983	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_330	III (5)	0.0061661841	6.13702e-5	Anus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1134	I (13)	2.76154e-5	1.948553e-4	Ovary	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1135	I (161)	1.22406e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1136	I (9)	5.15086e-5	1.012548e-4	Stomach and Esophagus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1138	I (47)	2.03525e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_331	IV (23)	0.0281480613	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1139	II (145)	1.07027e-5	6.93495e-5	Prostate	II	Other/missing	3	3
+cancer_cfdna_1140	I (161)	1.96816e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1141	II (108)	1.43213e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1142	I (161)	1.07266e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_332	IV (32)	0.0197198126	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1143	I (161)	1.718e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_333	IV (31)	0.0294475476	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1144	II (108)	2.299627e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_334	IV (49)	0.0037167623	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1145	I (75)	1.05267e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1146	II (145)	1.40417e-5	6.93495e-5	Prostate	II	I	3	3
+cancer_cfdna_1147	II (145)	7.4559e-6	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_1148	I (7)	1.40416e-5	1.023644e-4	NEC of Lung and Other Organs	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1149	II (5)	3.55251e-5	1.041925e-4	Uterus	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1150	II (108)	2.46828e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1151	I (161)	6.1793e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1152	I (161)	1.94101e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1154	I (75)	1.2536e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1155	III (12)	5.47147e-5	1.041925e-4	Uterus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1156	I (161)	7.2426e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1157	II (108)	1.31096e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1158	I (161)	1.04258e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1159	I (58)	1.50927e-5	6.93495e-5	Prostate	I	IV	4	4
+cancer_cfdna_1160	II (145)	1.85402e-5	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_335	III (45)	0.0016842802	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_336	III (19)	0.032056342	1.948553e-4	Ovary	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1161	II (108)	1.39379e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1162	I (22)	1.404321e-4	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1163	II (108)	7.06296e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_337	IV (74)	0.0227673628	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1164	II (5)	1.78198e-5	8.51642e-5	Liver and Bile Duct	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_338	IV (49)	0.0196969094	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_339	III (16)	0.0052608803000000004	1.023644e-4	NEC of Lung and Other Organs	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1166	III (37)	8.61415e-5	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1167	I (161)	9.981e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_341	IV (23)	0.1090147511	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1168	II (108)	8.5676e-6	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1169	I (58)	3.12243e-5	6.93495e-5	Prostate	I	Other/missing	3	4
+cancer_cfdna_1170	I (161)	1.22217e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1171	I (47)	1.97949e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1172	I (75)	1.64051e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_342	IV (49)	0.1092433043	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1173	I (161)	1.61626e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1174	I (161)	2.54751e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1175	I (161)	6.765e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1176	I (75)	4.99013e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_344	II (108)	0.0026538979	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_345	IV (31)	0.0023658986	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1177	II (108)	1.50752e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1178	I (75)	3.114166e-4	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1179	I (161)	1.0348e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_346	I (8)	0.0282952824	7.8737e-5	Bone and Soft Tissue	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1181	II (145)	2.34239e-5	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_1182	I (47)	1.56175e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1183	I (75)	1.6047e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_347	II (108)	0.0012630786	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1185	II (108)	2.15291e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_348	IV (32)	0.0059260944	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_349	IV (32)	0.0258117093	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_350	II (108)	0.002895235	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1186	I (161)	1e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1187	I (75)	3.42323e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_351	IV (23)	0.0133868171	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1188	II (108)	1.1862e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1189	II (23)	8.36079e-5	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1190	I (161)	1.02923e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1191	III (28)	1.944764e-4	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_352	II (108)	0.0030964969	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1192	I (161)	1.31238e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1193	I (161)	8.4342e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1194	II (145)	1.51884e-5	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_1195	II (108)	5.18862e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_353	III (19)	0.0675008191	1.948553e-4	Ovary	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1196	II (145)	1.79176e-5	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_1197	I (161)	7.6548e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1198	I (161)	1.21688e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1199	I (47)	9.39757e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_354	IV (31)	0.0220239152	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_355	I (47)	0.0035837167	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1200	IV (14)	0.0010057656	8.69931e-5	Breast	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1201	II (108)	1.05045e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_356	IV (74)	0.0511198968	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_357	IV (14)	0.0036525255	8.51642e-5	Liver and Bile Duct	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1203	I (161)	1.09471e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1204	II (108)	7.5785e-6	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_358	III (37)	0.0041187164	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_359	IV (23)	0.0549818351	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1205	II (145)	1.92345e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_1206	II (145)	1.40154e-5	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_1209	II (6)	1.47946e-5	1.183757e-4	Bladder and Urothelial Tract	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_360	IV (74)	0.0505399009	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1210	I (47)	1.28923e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_361	IV (74)	0.0011429041	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_362	IV (49)	0.0078782381	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1211	II (5)	2.31281e-5	1.041925e-4	Uterus	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_363	II (23)	0.0033465799	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1212	II (108)	7.8805e-6	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_364	III (45)	0.0545879632	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_365	IV (31)	0.0851468204	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_366	IV (32)	0.2105591067	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1213	II (145)	1.34773e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_1214	I (161)	1.9968e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1215	II (145)	1.05395e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_1216	I (161)	1.30616e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1217	IV (34)	3.540357e-4	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1218	I (161)	1.59849e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1219	I (161)	7.4469e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1220	I (161)	7.0186e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_368	III (45)	0.0026672618	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1221	II (108)	1.200057e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1222	II (8)	9.77721e-5	9.34104e-5	Head and Neck	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1223	I (161)	1.02241e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1224	I (161)	1.38142e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_369	IV (5)	0.0093231979	1.183757e-4	Bladder and Urothelial Tract	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1225	I (161)	7.8902e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1226	I (22)	1.244e-5	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1227	I (161)	9.248e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1228	I (75)	2.13753e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_370	III (16)	0.0815789401	1.023644e-4	NEC of Lung and Other Organs	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_371	IV (32)	0.1098143623	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1229	IV (74)	9.131401e-4	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1230	I (14)	3.261415e-4	1.029895e-4	Pancreas and Gallbladder	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1231	II (108)	1.56702e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1232	III (4)	3.02149e-5	1.376508e-4	Kidney	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_373	IV (10)	0.0119549478	1.948553e-4	Ovary	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1233	II (145)	1.64611e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_1234	I (39)	3.80855e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1236	II (145)	1.03498e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_1237	I (161)	2.76358e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1238	II (108)	1.54663e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1239	I (58)	1.14451e-5	6.93495e-5	Prostate	I	III	3	4
+cancer_cfdna_374	IV (49)	0.0441677792	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_375	III (37)	0.0047984571	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1240	II (108)	1.151991e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1241	I (161)	1.448e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1242	I (47)	1.1472e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1243	I (13)	3.47045e-5	1.948553e-4	Ovary	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1245	I (161)	2.65127e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1246	IV (13)	8.02695e-5	1.376508e-4	Kidney	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_377	IV (34)	0.1389302105	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1247	I (161)	3.81786e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1248	II (108)	6.955425e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1249	I (75)	2.35826e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_378	IV (34)	0.0177029132	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1250	I (58)	2.02095e-5	6.93495e-5	Prostate	I	Other/missing	3	4
+cancer_cfdna_1251	II (145)	1.12373e-5	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_1252	I (75)	1.83771e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1253	I (161)	1.03065e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1254	I (58)	7.9949e-6	6.93495e-5	Prostate	I	I	3	3
+cancer_cfdna_379	III (19)	0.0149616699	1.012548e-4	Stomach and Esophagus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1255	I (161)	5.6548e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1256	I (9)	2.3595e-5	1.012548e-4	Stomach and Esophagus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_380	IV (14)	0.01503178	8.51642e-5	Liver and Bile Duct	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1257	I (58)	2.10672e-5	6.93495e-5	Prostate	I	II	3	4
+cancer_cfdna_1258	II (145)	1.3426e-5	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_1259	II (145)	1.14877e-5	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_381	III (28)	0.0024862988	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1260	I (161)	8.2798e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1261	I (22)	3.951e-5	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1262	II (145)	1.67974e-5	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_1263	I (161)	6.6169e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1264	I (58)	7.5482e-6	6.93495e-5	Prostate	I	Other/missing	3	3
+cancer_cfdna_1265	II (145)	5.83304e-5	6.93495e-5	Prostate	II	V	4	5
+cancer_cfdna_1266	I (58)	8.8979e-6	6.93495e-5	Prostate	I	Other/missing	3	3
+cancer_cfdna_1267	I (161)	7.7516e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_382	IV (23)	0.0235102898	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_383	IV (49)	0.0018671135	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1268	II (145)	3.76214e-5	6.93495e-5	Prostate	II	Other/missing	4	5
+cancer_cfdna_1269	I (161)	6.1157e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1270	I (75)	2.53954e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1271	II (108)	1.95374e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1272	I (161)	1.5494e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1273	I (161)	1.67997e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1274	II (108)	1.387249e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1275	I (161)	1.86263e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_384	II (23)	0.0091144469	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1276	I (161)	7.1683e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1277	I (75)	2.14115e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1278	I (75)	2.73094e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1279	II (145)	1.12912e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_1280	I (161)	7.6149e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_385	IV (34)	0.0368063605	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_386	IV (10)	0.004762186	1.948553e-4	Ovary	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_387	IV (34)	0.0064417721	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1281	II (145)	4.53609e-5	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_1282	II (108)	9.9437e-6	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1283	I (161)	7.8581e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1284	II (23)	3.87566e-5	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_388	II (23)	0.0530217949	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_389	III (45)	0.0224528951	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1286	I (161)	1.59719e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1287	I (39)	0.0014280757	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_390	IV (14)	0.0120844378	8.69931e-5	Breast	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1288	I (58)	2.84686e-5	6.93495e-5	Prostate	I	Other/missing	3	3
+cancer_cfdna_1289	I (161)	9.6467e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1290	I (161)	1.04241e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_391	II (108)	0.0075415334	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1291	III (9)	9.944421e-4	9.34104e-5	Head and Neck	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1292	II (108)	1.0941799999999999e-05	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_393	III (15)	0.0182648479	1.029895e-4	Pancreas and Gallbladder	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_394	II (108)	0.0019625756	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1293	I (75)	1.93537e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1294	I (22)	5.41613e-5	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1295	I (58)	1.25277e-5	6.93495e-5	Prostate	I	Other/missing	3	3
+cancer_cfdna_395	IV (32)	0.0076052861	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1296	III (28)	1.02326e-5	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1297	II (108)	1.45456e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1298	I (58)	1.41547e-5	6.93495e-5	Prostate	I	I	3	3
+cancer_cfdna_1299	III (28)	1.90166e-5	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_396	II (108)	0.0601250614	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1300	II (145)	8.3711e-6	6.93495e-5	Prostate	II	I	3	3
+cancer_cfdna_1301	I (13)	3.351581e-4	1.948553e-4	Ovary	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1302	I (161)	1.40231e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1303	III (3)	6.8669e-5	1.183757e-4	Bladder and Urothelial Tract	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1304	I (58)	1.78012e-5	6.93495e-5	Prostate	I	II	3	4
+cancer_cfdna_1305	I (75)	1.80132e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1306	I (75)	1.33231e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_397	II (108)	0.0203896406	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1307	I (161)	1.16489e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_398	IV (34)	0.1176690284	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1310	I (161)	1.27303e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_399	IV (74)	0.0850619584	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1312	IV (14)	6.203218e-4	8.69931e-5	Breast	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_400	III (19)	0.0555829859	1.948553e-4	Ovary	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1313	I (58)	2.57553e-5	6.93495e-5	Prostate	I	I	3	3
+cancer_cfdna_1314	II (108)	1.2767e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1315	II (108)	1.65859e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_401	III (5)	0.0181751209	6.13702e-5	Anus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_402	II (2)	0.0132681082	7.8737e-5	Bone and Soft Tissue	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_403	III (16)	0.0662303067	1.023644e-4	NEC of Lung and Other Organs	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1316	III (15)	5.38624e-4	1.029895e-4	Pancreas and Gallbladder	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1317	IV (74)	4.99332e-5	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1318	II (108)	1.01555e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1319	III (37)	2.88757e-5	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1320	III (2)	1.54658e-5	9.30823e-5	Melanocytic Lineage	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_404	IV (49)	0.1202015743	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1321	I (58)	1.10069e-5	6.93495e-5	Prostate	I	II	3	4
+cancer_cfdna_1322	I (161)	1.17877e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_405	IV (74)	0.0046956989	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1323	II (145)	1.005513e-4	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_1324	I (39)	3.41688e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1325	I (161)	1.32638e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_406	IV (14)	0.0041843428	8.51642e-5	Liver and Bile Duct	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1326	I (47)	2.71436e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1327	I (161)	9.6612e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1328	I (161)	1.10362e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1329	III (28)	0.0011761848	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1330	III (45)	1.32685e-5	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_407	III (28)	0.0038228978	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_408	IV (34)	0.2278522743	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1331	I (161)	2.157e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1332	I (58)	1.45424e-5	6.93495e-5	Prostate	I	I	3	3
+cancer_cfdna_1333	II (145)	3.39448e-5	6.93495e-5	Prostate	II	IV	4	4
+cancer_cfdna_1334	I (13)	1.70978e-5	1.948553e-4	Ovary	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1335	I (161)	2.69115e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1336	I (161)	1.40579e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1338	I (161)	3.819696e-4	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_410	IV (74)	0.0186579683	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1339	II (8)	9.7777e-6	9.34104e-5	Head and Neck	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1340	II (145)	7.993e-6	6.93495e-5	Prostate	II	IV	3	5
+cancer_cfdna_1341	I (161)	1.30793e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1342	III (37)	1.29929e-5	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1343	IV (74)	2.340835e-4	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_411	IV (31)	0.0022217584	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1344	II (145)	1.15646e-5	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_1345	I (161)	8.2219e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_412	IV (14)	0.08773531	8.69931e-5	Breast	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1346	I (161)	1.6285e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1347	I (161)	1.37031e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1348	III (28)	1.610664e-4	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1349	IV (49)	2.450839e-4	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1350	I (161)	1.5937e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1351	I (161)	1.35521e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1352	III (19)	7.731529e-4	1.948553e-4	Ovary	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1353	II (108)	9.9675e-6	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1354	I (161)	9.1929e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_413	III (28)	0.0155051537	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1355	I (161)	1.94361e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_414	II (4)	0.0116860049	1.023644e-4	NEC of Lung and Other Organs	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_415	III (3)	0.0017641576	1.183757e-4	Bladder and Urothelial Tract	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_416	II (23)	0.0416846857	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1356	III (4)	6.24877e-5	1.376508e-4	Kidney	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1357	I (75)	3.57897e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_417	III (15)	0.0183087335	1.029895e-4	Pancreas and Gallbladder	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1358	II (108)	3.491696e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1359	III (31)	1.78504e-5	6.93495e-5	Prostate	III	III	4	3
+cancer_cfdna_1360	III (15)	3.243318e-4	1.029895e-4	Pancreas and Gallbladder	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1361	II (6)	1.83361e-5	1.183757e-4	Bladder and Urothelial Tract	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_418	III (4)	0.0252456858	8.51642e-5	Liver and Bile Duct	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1362	II (108)	8.9362e-6	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_419	IV (74)	0.0154814318	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1363	I (5)	4.37627e-5	8.51642e-5	Liver and Bile Duct	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1364	I (75)	1.4569e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1365	II (108)	1.61228e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1366	III (28)	0.001138136	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1367	I (75)	1.140751e-4	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_420	IV (74)	0.0051583627	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_421	II (108)	0.001842536	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1368	II (145)	6.7544e-6	6.93495e-5	Prostate	II	I	3	3
+cancer_cfdna_1369	II (145)	1.59612e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_1370	II (145)	9.6218e-6	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_1371	IV (32)	0.0010961108	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1372	I (161)	1.18447e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1373	I (161)	8.1244e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1375	III (28)	6.30886e-4	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_422	III (45)	0.029003852	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1377	I (39)	2.20496e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1378	I (58)	1.98133e-5	6.93495e-5	Prostate	I	II	3	4
+cancer_cfdna_1379	I (161)	1.470457e-4	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1380	I (22)	1.58909e-5	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1381	III (37)	3.73442e-5	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1382	I (161)	2.2544e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1383	II (108)	6.335769e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1384	II (145)	3.51876e-5	6.93495e-5	Prostate	II	I	3	3
+cancer_cfdna_1385	I (161)	9.5123e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_423	IV (34)	0.0119694274	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_424	IV (14)	0.0488030502	8.69931e-5	Breast	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1386	I (22)	1.58454e-5	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_425	IV (23)	0.1366541701	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_426	IV (74)	0.0093834931	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_427	IV (23)	0.0811076533	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1387	I (22)	2.50789e-5	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_428	IV (74)	0.002846539	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1388	II (108)	1.351419e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1389	III (45)	5.13969e-5	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1390	II (24)	1.37088e-5	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1391	II (108)	2.45399e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1392	II (13)	8.332203e-4	1.012548e-4	Stomach and Esophagus	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1393	I (161)	1.07978e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1394	IV (74)	6.02093e-5	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1395	II (108)	5.840742e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1396	II (5)	1.32688e-5	1.041925e-4	Uterus	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_430	II (24)	0.0335075827	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1397	I (75)	4.20545e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_431	II (108)	0.0034409129	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_432	IV (49)	0.0415315559	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_433	IV (14)	0.0113183054	8.51642e-5	Liver and Bile Duct	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1399	I (13)	3.46177e-5	1.948553e-4	Ovary	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1401	I (161)	8.7191e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1402	I (161)	1.15112e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1403	III (15)	5.57582e-4	1.029895e-4	Pancreas and Gallbladder	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1404	I (161)	1.34296e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1405	II (145)	1.36767e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_1406	II (108)	1.57607e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1407	II (145)	1.09857e-5	6.93495e-5	Prostate	II	Other/missing	4	3
+cancer_cfdna_434	IV (49)	0.0714610237	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_435	IV (34)	0.0991280935	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1408	I (161)	1.63489e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1409	I (75)	2.18313e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1410	I (161)	1.71121e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1411	I (161)	1.945712e-4	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1412	I (161)	4.67285e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1413	II (145)	2.24455e-5	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_1414	I (161)	1.2421e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1415	I (161)	2.84572e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1416	II (145)	1.17351e-5	6.93495e-5	Prostate	II	Other/missing	4	3
+cancer_cfdna_1417	III (45)	0.001114424	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_436	IV (14)	0.0453476071	8.69931e-5	Breast	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1419	I (75)	3.04097e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1420	II (108)	3.495e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1421	I (1)	2.18969e-5	9.30823e-5	Melanocytic Lineage	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1422	II (108)	5.93285e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_437	IV (14)	0.0086576322	8.51642e-5	Liver and Bile Duct	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1423	I (161)	1.52829e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1424	I (75)	1.867682e-4	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1425	II (10)	6.87887e-5	1.029895e-4	Pancreas and Gallbladder	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1426	I (161)	3.338302e-4	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1427	I (47)	3.73279e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1428	III (45)	3.5103e-5	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1429	II (108)	1.534719e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1430	II (3)	6.859031e-4	7.5803399999999993e-05	Cervix	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1431	II (10)	3.230073e-4	1.029895e-4	Pancreas and Gallbladder	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_438	IV (23)	0.0935813518	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1432	I (39)	4.09466e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_439	III (45)	0.0055572256	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1433	II (108)	1.19441e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1434	I (161)	1.32999e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_440	IV (10)	0.0915157905	1.948553e-4	Ovary	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1435	II (108)	3.23812e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_442	IV (49)	0.1162925796	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1436	I (8)	2.544091e-4	7.5803399999999993e-05	Cervix	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1437	II (108)	1.696933e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_443	III (45)	0.0114086656	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_444	III (19)	0.0200389897	1.012548e-4	Stomach and Esophagus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_445	IV (74)	0.0502121357	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1439	I (161)	1.08191e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1440	I (161)	2.01736e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1441	III (28)	1.230022e-4	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1442	II (145)	1.52316e-5	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_447	IV (49)	0.0024361415	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1444	I (161)	1.17311e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_448	III (45)	0.0155285047	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1445	II (108)	1.02539e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1446	III (37)	1.344323e-4	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1447	III (37)	5.020701e-4	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1448	I (13)	1.682477e-4	1.948553e-4	Ovary	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1449	I (8)	1.36319e-4	7.8737e-5	Bone and Soft Tissue	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1450	I (161)	1.1722e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1451	I (161)	9.6823e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1452	IV (49)	1.522925e-4	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1453	I (161)	1.09171e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_449	II (108)	0.0012984311	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1454	II (145)	1.12102e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_1455	III (15)	5.308664e-4	1.029895e-4	Pancreas and Gallbladder	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1456	II (108)	1.511358e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1457	III (37)	5.192924e-4	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_451	IV (31)	0.0029070159	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1458	I (161)	7.3692e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1459	II (145)	9.8625e-6	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_1460	I (161)	8.9669e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1461	II (23)	1.888103e-4	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1462	I (161)	1.37322e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1463	I (75)	0.001051431	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1464	II (5)	1.60248e-5	1.041925e-4	Uterus	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1465	I (161)	9.885e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_452	IV (74)	0.0673089051	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1466	I (161)	1.23267e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1469	III (31)	1.02203e-4	6.93495e-5	Prostate	III	Other/missing	4	5
+cancer_cfdna_1470	II (108)	3.934756e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1471	III (31)	1.69853e-5	6.93495e-5	Prostate	III	IV	4	4
+cancer_cfdna_453	IV (74)	0.0094222856	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1472	II (108)	1.471142e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1473	I (75)	2.29143e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1474	I (161)	7.0889e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1475	I (161)	1.07842e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1476	II (145)	9.37e-6	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_1477	II (145)	7.8702e-6	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_1479	I (161)	9.4972e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1480	I (161)	2.47838e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_454	IV (32)	0.0283739138	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_455	IV (74)	0.0017449222	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1481	I (161)	6.6864e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_456	III (37)	0.00485225	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_457	IV (74)	0.0105829557	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1482	I (13)	0.0012334336	1.948553e-4	Ovary	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1483	I (39)	1.492646e-4	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1485	III (6)	2.685515e-4	7.8737e-5	Bone and Soft Tissue	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1486	II (8)	1.16582e-5	9.34104e-5	Head and Neck	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_1	III (4)	0.026935326	8.51642e-5	Liver and Bile Duct	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_500	III (19)	6.177766e-4	1.948553e-4	Ovary	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_501	I (161)	1.19627e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_502	I (14)	2.00608e-5	1.029895e-4	Pancreas and Gallbladder	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_2	IV (5)	0.0062312779	1.183757e-4	Bladder and Urothelial Tract	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_3	IV (23)	0.1195486685	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_4	IV (5)	0.0440233041	1.183757e-4	Bladder and Urothelial Tract	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_504	I (39)	2.43267e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_505	IV (14)	9.426156e-4	8.69931e-5	Breast	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_5	III (45)	0.0038921764	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_6	II (5)	0.0323199435	8.51642e-5	Liver and Bile Duct	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_506	II (108)	1.19449e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_7	IV (49)	0.0969865439	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_507	III (37)	4.930114e-4	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_8	IV (32)	0.0255748995	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_509	III (9)	1.238142e-4	9.34104e-5	Head and Neck	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_9	IV (31)	0.0018921872	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_10	IV (14)	0.0431940717	8.69931e-5	Breast	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_510	II (108)	1.16493e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_511	I (58)	6.8872e-6	6.93495e-5	Prostate	I	II	3	4
+cancer_cfdna_512	II (145)	1.8303e-5	6.93495e-5	Prostate	II	IV	4	4
+cancer_cfdna_11	IV (74)	0.027418894	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_12	IV (31)	0.0253547006	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_13	III (9)	0.0282986793	9.34104e-5	Head and Neck	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_513	I (39)	2.59092e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_516	III (2)	4.04029e-5	9.30823e-5	Melanocytic Lineage	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_14	IV (31)	0.0176807383	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_517	II (24)	5.31084e-4	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_520	II (145)	6.7186e-5	6.93495e-5	Prostate	II	V	4	5
+cancer_cfdna_15	III (19)	0.0028490136	1.012548e-4	Stomach and Esophagus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_521	II (8)	1.151641e-4	9.34104e-5	Head and Neck	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_16	IV (74)	0.0128673626	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_523	II (145)	1.41399e-5	6.93495e-5	Prostate	II	Other/missing	4	3
+cancer_cfdna_524	II (145)	1.14149e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_525	II (108)	1.24605e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_526	II (145)	5.03242e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_527	IV (3)	9.946742e-4	9.30823e-5	Melanocytic Lineage	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_528	II (145)	1.81408e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_529	II (24)	1.85859e-5	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_530	II (145)	9.6759e-6	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_531	IV (16)	7.66332e-5	6.93495e-5	Prostate	IV	Other/missing	5	5
+cancer_cfdna_532	I (7)	1.63752e-5	1.023644e-4	NEC of Lung and Other Organs	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_17	IV (34)	0.007029615	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_533	II (10)	3.054373e-4	1.029895e-4	Pancreas and Gallbladder	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_534	I (14)	1.93011e-5	1.029895e-4	Pancreas and Gallbladder	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_535	I (22)	8.03983e-5	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_536	I (58)	1.76085e-5	6.93495e-5	Prostate	I	I	3	3
+cancer_cfdna_537	II (5)	2.85309e-5	1.376508e-4	Kidney	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_18	IV (32)	0.0094995258	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_538	III (6)	3.782384e-4	7.8737e-5	Bone and Soft Tissue	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_539	II (145)	1.02388e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_540	III (31)	9.9259e-6	6.93495e-5	Prostate	III	Other/missing	3	4
+cancer_cfdna_541	I (58)	1.47678e-5	6.93495e-5	Prostate	I	I	3	3
+cancer_cfdna_543	I (75)	1.78392e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_544	I (13)	6.08167e-5	1.948553e-4	Ovary	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_545	III (31)	1.80847e-5	6.93495e-5	Prostate	III	V	5	4
+cancer_cfdna_546	I (161)	1.93086e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_19	III (45)	0.0051553815	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_547	III (37)	6.79847e-5	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_548	I (22)	1.012479e-4	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_549	I (58)	8.2886e-6	6.93495e-5	Prostate	I	IV	4	4
+cancer_cfdna_550	I (47)	3.14866e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_551	III (45)	3.397753e-4	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_552	IV (16)	8.791522e-4	6.93495e-5	Prostate	IV	IV	4	4
+cancer_cfdna_20	IV (14)	0.0095181259	8.69931e-5	Breast	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_21	IV (16)	0.1309662063	6.93495e-5	Prostate	IV	V	5	5
+cancer_cfdna_553	IV (13)	4.37632e-5	1.376508e-4	Kidney	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_22	II (23)	0.0038577082	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_23	III (37)	0.004736306	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_554	I (75)	2.64242e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_555	II (145)	9.456e-6	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_556	II (145)	3.27953e-5	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_557	IV (49)	7.646299e-4	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_558	I (75)	1.82747e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_24	IV (31)	0.0292023558	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_559	I (39)	5.58341e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_560	I (39)	8.058166e-4	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_561	I (8)	9.5056e-6	7.5803399999999993e-05	Cervix	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_562	II (145)	8.6063e-6	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_563	III (19)	6.1776e-6	1.012548e-4	Stomach and Esophagus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_25	IV (74)	0.0013371997	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_564	II (145)	8.2741e-6	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_565	I (8)	3.94296e-5	7.8737e-5	Bone and Soft Tissue	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_566	II (145)	8.9208e-6	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_567	I (75)	1.42786e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_568	III (19)	3.98159e-5	1.012548e-4	Stomach and Esophagus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_26	III (16)	0.0729823683	1.023644e-4	NEC of Lung and Other Organs	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_569	I (58)	7.3979e-6	6.93495e-5	Prostate	I	III	4	3
+cancer_cfdna_27	II (23)	0.0654129949	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_570	I (58)	1.08929e-5	6.93495e-5	Prostate	I	I	3	4
+cancer_cfdna_571	II (145)	9.1341e-6	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_572	III (45)	2.31098e-5	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_573	II (145)	1.38692e-5	6.93495e-5	Prostate	II	Other/missing	4	3
+cancer_cfdna_574	I (58)	1.73192e-5	6.93495e-5	Prostate	I	II	3	4
+cancer_cfdna_575	II (145)	3.81883e-5	6.93495e-5	Prostate	II	I	3	3
+cancer_cfdna_28	IV (74)	0.1138071726	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_29	IV (32)	0.0795502826	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_30	IV (34)	0.1047114555	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_31	III (15)	0.0033470878	1.029895e-4	Pancreas and Gallbladder	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_32	IV (34)	0.0068821903	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_33	III (2)	0.0044608948	7.5803399999999993e-05	Cervix	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_34	III (6)	0.0075384736	7.8737e-5	Bone and Soft Tissue	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_578	II (108)	1.173792e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_579	II (145)	9.1249e-6	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_580	II (13)	1.367586e-4	1.012548e-4	Stomach and Esophagus	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_581	IV (74)	2.34342e-5	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_582	II (145)	1.35607e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_35	IV (16)	0.1334741275	6.93495e-5	Prostate	IV	Other/missing	4	5
+cancer_cfdna_583	I (47)	2.01727e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_585	I (47)	3.43646e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_586	II (145)	1.90549e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_587	I (75)	8.7103e-6	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_36	IV (34)	0.074144207	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_588	IV (31)	3.01269e-5	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_37	IV (14)	0.0426119253	8.51642e-5	Liver and Bile Duct	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_38	I (8)	0.0015649811	7.5803399999999993e-05	Cervix	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_589	I (22)	1.270617e-4	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_590	II (145)	1.62017e-5	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_591	I (47)	1.176398e-4	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_39	IV (74)	0.0067656837	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_592	II (145)	6.4194e-6	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_593	III (31)	5.48968e-5	6.93495e-5	Prostate	III	Other/missing	4	3
+cancer_cfdna_40	IV (31)	0.0635900832	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_594	II (145)	8.4185e-6	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_595	II (145)	1.71634e-5	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_596	I (58)	9.5698e-6	6.93495e-5	Prostate	I	II	3	4
+cancer_cfdna_43	IV (74)	0.001160679	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_597	I (75)	1.157224e-4	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_44	IV (74)	0.0482387891	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_598	III (31)	4.147299e-4	6.93495e-5	Prostate	III	III	4	3
+cancer_cfdna_46	III (16)	0.0259072618	1.023644e-4	NEC of Lung and Other Organs	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_599	I (75)	2.12216e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_600	I (9)	1.72447e-5	1.012548e-4	Stomach and Esophagus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_602	II (145)	6.9113e-6	6.93495e-5	Prostate	II	IV	4	4
+cancer_cfdna_603	II (145)	7.6196e-6	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_47	III (31)	0.0744788728	6.93495e-5	Prostate	III	V	5	4
+cancer_cfdna_604	II (145)	1.85325e-5	6.93495e-5	Prostate	II	I	3	3
+cancer_cfdna_605	II (145)	7.4894e-6	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_606	II (145)	1.35885e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_607	I (39)	2.79159e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_608	I (22)	7.6896e-6	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_609	I (47)	2.54999e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_48	IV (23)	0.0880443193	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_610	III (37)	1.44237e-5	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_611	III (37)	1.0639e-5	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_612	I (75)	3.81457e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_49	IV (16)	0.1222599526	6.93495e-5	Prostate	IV	IV	3	5
+cancer_cfdna_50	IV (74)	0.0144944543	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_613	I (47)	4.574991e-4	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_614	III (9)	1.838074e-4	9.34104e-5	Head and Neck	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_51	IV (13)	0.0135980814	1.376508e-4	Kidney	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_615	I (14)	1.37175e-5	1.029895e-4	Pancreas and Gallbladder	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_616	II (145)	1.15471e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_52	IV (6)	0.0023058732	7.8737e-5	Bone and Soft Tissue	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_53	III (19)	0.0056731585	1.948553e-4	Ovary	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_54	III (45)	0.0025547488	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_617	I (58)	1.29114e-5	6.93495e-5	Prostate	I	II	3	4
+cancer_cfdna_618	II (145)	7.2697e-6	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_55	IV (74)	0.0099768168	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_619	I (47)	1.40298e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_620	II (10)	6.2745e-5	1.029895e-4	Pancreas and Gallbladder	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_56	III (37)	0.003347559	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_57	IV (74)	0.057049924	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_621	II (145)	4.41537e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_622	II (24)	7.19119e-5	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_623	III (9)	1.262475e-4	9.34104e-5	Head and Neck	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_58	IV (34)	0.007542261	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_624	III (9)	2.70067e-5	9.34104e-5	Head and Neck	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_59	IV (32)	0.0687596659	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_625	I (58)	7.6847e-6	6.93495e-5	Prostate	I	II	3	4
+cancer_cfdna_626	I (39)	6.53293e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_60	IV (34)	0.0944553267	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_627	I (75)	2.76406e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_628	I (75)	2.43956e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_61	III (9)	0.0393323686	9.34104e-5	Head and Neck	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_62	IV (31)	0.0038149154	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_630	I (8)	4.85458e-5	7.8737e-5	Bone and Soft Tissue	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_63	III (37)	0.0019855495	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_631	II (23)	1.03191e-5	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_64	IV (74)	0.0440756035	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_632	IV (74)	7.718786e-4	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_633	I (39)	1.320171e-4	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_634	I (75)	1.7175e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_635	I (58)	1.19867e-5	6.93495e-5	Prostate	I	I	3	3
+cancer_cfdna_65	III (16)	0.0538136481	1.023644e-4	NEC of Lung and Other Organs	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_636	IV (13)	2.19399e-5	1.376508e-4	Kidney	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_637	IV (74)	4.15774e-5	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_638	I (47)	1.03015e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_66	I (22)	0.0210731797	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_67	IV (32)	0.0045639997	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_68	III (37)	0.0022554871	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_69	IV (32)	0.0581160313	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_70	IV (74)	0.0037229118	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_71	IV (34)	0.1174327613	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_72	IV (74)	0.0547007074	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_639	I (22)	1.46485e-5	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_73	III (45)	0.0035003112	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_74	IV (74)	0.0606309493	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_75	III (16)	0.017056419	1.023644e-4	NEC of Lung and Other Organs	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_76	II (3)	0.0299521546	7.5803399999999993e-05	Cervix	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_640	III (31)	4.31511e-5	6.93495e-5	Prostate	III	V	5	4
+cancer_cfdna_641	I (22)	1.44415e-5	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_77	III (2)	0.0309695257	7.5803399999999993e-05	Cervix	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_642	III (31)	1.43319e-5	6.93495e-5	Prostate	III	Other/missing	4	5
+cancer_cfdna_643	II (10)	1.48478e-5	1.029895e-4	Pancreas and Gallbladder	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_644	I (39)	3.33614e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_78	I (8)	0.0027350004	7.5803399999999993e-05	Cervix	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_79	IV (74)	0.013557971	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_645	II (145)	2.19225e-5	6.93495e-5	Prostate	II	Other/missing	3	4
+cancer_cfdna_80	II (4)	0.0021741904	1.023644e-4	NEC of Lung and Other Organs	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_646	III (31)	1.93789e-5	6.93495e-5	Prostate	III	V	4	5
+cancer_cfdna_647	I (47)	2.87652e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_648	II (145)	1.10343e-5	6.93495e-5	Prostate	II	IV	4	4
+cancer_cfdna_649	I (8)	4.80514e-5	7.5803399999999993e-05	Cervix	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_82	IV (74)	0.0259175148	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_83	I (14)	0.0013091259	1.029895e-4	Pancreas and Gallbladder	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_84	III (19)	0.0265594214	1.948553e-4	Ovary	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_85	III (45)	0.0180083672	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_86	IV (32)	0.1390447335	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_87	IV (3)	0.0071184423	9.30823e-5	Melanocytic Lineage	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_650	II (145)	3.02189e-5	6.93495e-5	Prostate	II	V	4	5
+cancer_cfdna_651	I (39)	3.37647e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_652	I (58)	1.96757e-5	6.93495e-5	Prostate	I	III	4	3
+cancer_cfdna_653	I (39)	5.427521e-4	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_654	II (145)	1.76528e-5	6.93495e-5	Prostate	II	IV	4	4
+cancer_cfdna_88	IV (74)	0.0023064865	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_655	IV (74)	8.69624e-5	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_89	IV (49)	0.0039484749	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_656	II (145)	1.43298e-5	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_657	II (24)	1.02964e-5	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_658	I (7)	1.062913e-4	1.023644e-4	NEC of Lung and Other Organs	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_90	III (19)	0.0196546559	1.948553e-4	Ovary	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_91	IV (49)	0.0246675294	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_92	I (5)	0.0151572366	8.51642e-5	Liver and Bile Duct	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_93	IV (34)	0.0683678093	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_659	I (22)	1.84491e-4	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_94	IV (34)	0.0248724785	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_95	IV (16)	0.0243810391	6.93495e-5	Prostate	IV	IV	4	4
+cancer_cfdna_96	III (37)	0.0015858158	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_97	IV (74)	0.0801793693	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_98	IV (34)	0.0128191289	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_99	IV (49)	0.0073048292	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_660	III (31)	6.5544e-6	6.93495e-5	Prostate	III	V	5	4
+cancer_cfdna_100	II (23)	0.0016256239	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_661	III (45)	3.734996e-4	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_662	I (7)	2.07951e-5	1.023644e-4	NEC of Lung and Other Organs	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_663	III (15)	2.273975e-4	1.029895e-4	Pancreas and Gallbladder	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_664	III (45)	3.53932e-5	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_665	IV (32)	5.56731e-5	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_102	IV (49)	0.0597505239	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_666	I (10)	2.14278e-5	9.34104e-5	Head and Neck	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_667	III (45)	1.806651e-4	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_103	IV (74)	0.0059250495	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_104	III (19)	0.0072652487	1.012548e-4	Stomach and Esophagus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_668	I (58)	1.604706e-4	6.93495e-5	Prostate	I	Other/missing	4	4
+cancer_cfdna_669	II (23)	6.741128e-4	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_670	III (19)	7.07982e-4	1.948553e-4	Ovary	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_105	IV (6)	0.0320894338	7.8737e-5	Bone and Soft Tissue	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_106	III (4)	0.0178965936	8.51642e-5	Liver and Bile Duct	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_107	IV (74)	0.0209801294	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_671	I (75)	4.2678e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_672	I (75)	3.08018e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_673	III (45)	8.785435e-4	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_674	II (23)	6.93193e-5	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_675	III (37)	2.669417e-4	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_676	I (14)	0.0010914033	1.029895e-4	Pancreas and Gallbladder	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_677	III (37)	1.9657e-5	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_108	IV (14)	0.1200842447	8.51642e-5	Liver and Bile Duct	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_678	I (14)	1.311434e-4	1.029895e-4	Pancreas and Gallbladder	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_679	III (12)	1.488027e-4	1.041925e-4	Uterus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_109	IV (32)	0.0203361578	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_110	IV (16)	0.011163137	6.93495e-5	Prostate	IV	V	4	5
+cancer_cfdna_680	I (9)	1.15088e-5	1.012548e-4	Stomach and Esophagus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_111	IV (49)	0.1058877434	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_681	III (45)	4.49778e-5	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_682	III (37)	3.165823e-4	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_112	IV (16)	0.0024642242	6.93495e-5	Prostate	IV	Other/missing	5	4
+cancer_cfdna_683	I (47)	4.80654e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_684	III (37)	6.1508e-6	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_685	I (47)	8.21775e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_113	IV (32)	0.1222358587	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_686	II (108)	1.44028e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_687	I (5)	4.11319e-5	1.183757e-4	Bladder and Urothelial Tract	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_688	II (13)	3.87623e-5	1.012548e-4	Stomach and Esophagus	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_689	II (23)	7.3635e-5	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_690	II (24)	3.437704e-4	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_115	IV (6)	0.0075868165	7.8737e-5	Bone and Soft Tissue	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_691	III (19)	4.34042e-5	1.012548e-4	Stomach and Esophagus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_692	II (24)	9.403136e-4	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_693	III (31)	1.90657e-5	6.93495e-5	Prostate	III	V	4	5
+cancer_cfdna_694	II (108)	1.742146e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_116	IV (49)	0.0652942781	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_117	IV (74)	0.1180170829	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_695	III (19)	1.615437e-4	1.012548e-4	Stomach and Esophagus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_696	I (14)	7.686709e-4	1.029895e-4	Pancreas and Gallbladder	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_118	IV (31)	0.0020212023	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_697	II (145)	2.4923e-4	6.93495e-5	Prostate	II	V	4	5
+cancer_cfdna_119	IV (5)	0.1083902467	1.183757e-4	Bladder and Urothelial Tract	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_698	II (5)	6.08894e-5	1.376508e-4	Kidney	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_120	II (5)	0.0044212417	8.51642e-5	Liver and Bile Duct	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_121	IV (32)	0.076811304	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_122	II (108)	0.013089017	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_700	III (37)	6.70957e-5	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_701	III (37)	0.0010581737	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_702	I (47)	1.40292e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_703	I (39)	4.43824e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_704	III (37)	4.360659e-4	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_705	I (47)	1.29079e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_123	IV (74)	0.0012976197	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_124	IV (23)	0.0750182176	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_125	IV (34)	0.0042656325	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_706	I (8)	1.216334e-4	7.5803399999999993e-05	Cervix	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_126	IV (23)	0.1034816014	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_707	IV (34)	4.9841e-6	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_127	III (37)	0.0487754257	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_128	IV (74)	0.0388733316	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_708	IV (49)	4.42916e-5	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_709	I (47)	2.718604e-4	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_129	III (19)	0.0143641815	1.948553e-4	Ovary	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_710	I (47)	1.24828e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_130	II (108)	0.0087831524	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_711	IV (6)	2.38968e-5	7.8737e-5	Bone and Soft Tissue	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_712	IV (74)	4.89314e-5	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_713	I (7)	1.13458e-5	1.023644e-4	NEC of Lung and Other Organs	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_131	III (37)	0.0035772633	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_714	II (8)	6.156484e-4	9.34104e-5	Head and Neck	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_133	I (14)	0.0013579658	1.029895e-4	Pancreas and Gallbladder	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_134	IV (32)	0.051196999	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_715	II (145)	9.643e-6	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_716	I (39)	2.91448e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_717	I (47)	1.72353e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_718	III (31)	1.22706e-5	6.93495e-5	Prostate	III	Other/missing	3	4
+cancer_cfdna_719	IV (31)	5.43797e-5	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_135	IV (32)	0.0090737237	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_720	III (31)	5.8708e-6	6.93495e-5	Prostate	III	IV	4	4
+cancer_cfdna_721	II (145)	1.62604e-5	6.93495e-5	Prostate	II	II	3	4
+cancer_cfdna_136	II (23)	0.0060812115	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_723	II (24)	2.576023e-4	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_137	IV (34)	0.0074678706	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_724	II (145)	3.06914e-5	6.93495e-5	Prostate	II	IV	4	4
+cancer_cfdna_725	III (45)	1.800365e-4	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_726	II (108)	1.072303e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_138	IV (74)	0.0014602917	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_139	II (108)	0.0044548091	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_140	IV (74)	0.0067389903	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_727	I (39)	2.28537e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_728	IV (49)	1.472345e-4	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_729	IV (31)	2.586807e-4	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_141	IV (32)	0.008898632	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_142	I (47)	0.0067821794	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_143	III (19)	0.0743489489	1.948553e-4	Ovary	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_730	I (14)	8.22538e-5	1.029895e-4	Pancreas and Gallbladder	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_731	II (145)	7.8566e-6	6.93495e-5	Prostate	II	V	4	5
+cancer_cfdna_732	III (45)	2.10001e-5	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_144	III (45)	0.0015654065	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_733	II (2)	0.0012661835	6.13702e-5	Anus	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_734	III (31)	1.64869e-5	6.93495e-5	Prostate	III	V	4	5
+cancer_cfdna_145	IV (23)	0.0942922595	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_735	IV (74)	5.674748e-4	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_736	I (161)	1.512e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_147	III (45)	0.0293650523	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_737	I (39)	3.21903e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_738	I (47)	2.23601e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_739	I (10)	3.37453e-5	9.34104e-5	Head and Neck	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_740	I (14)	3.249683e-4	1.029895e-4	Pancreas and Gallbladder	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_148	III (28)	0.0344011591	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_741	I (22)	3.4474e-5	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_742	II (10)	4.975719e-4	1.029895e-4	Pancreas and Gallbladder	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_743	III (31)	3.878764e-4	6.93495e-5	Prostate	III	II	3	4
+cancer_cfdna_744	I (47)	4.72498e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_149	IV (49)	0.0631385739	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_745	IV (49)	1.24818e-4	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_746	IV (49)	0.0010941517	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_150	III (16)	0.0801705049	1.023644e-4	NEC of Lung and Other Organs	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_747	IV (32)	7.580884e-4	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_151	IV (23)	0.0379676795	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_748	I (58)	2.9275e-5	6.93495e-5	Prostate	I	V	4	5
+cancer_cfdna_749	II (108)	2.05021e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_750	IV (74)	1.63607e-5	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_152	IV (34)	0.001717646	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_153	III (28)	0.024591517	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_751	I (47)	1.39023e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_154	III (5)	0.0209166136	6.13702e-5	Anus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_155	III (19)	0.0024213976	1.948553e-4	Ovary	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_752	I (47)	1.3737e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_753	I (161)	1.04909e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_156	IV (74)	0.0139732904	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_157	IV (31)	0.0015497592	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_158	III (9)	0.0028060005	9.34104e-5	Head and Neck	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_159	IV (14)	0.100580134	8.69931e-5	Breast	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_160	IV (23)	0.1075360194	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_161	IV (74)	0.0025911746	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_162	IV (34)	0.1677679026	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_754	I (161)	2.315914e-4	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_163	IV (49)	0.001332435	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_755	I (10)	8.789587e-4	9.34104e-5	Head and Neck	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_756	III (45)	3.092311e-4	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_757	III (19)	8.704841e-4	1.012548e-4	Stomach and Esophagus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_758	I (58)	1.95255e-5	6.93495e-5	Prostate	I	IV	4	4
+cancer_cfdna_164	IV (49)	0.0404506706	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_759	II (23)	6.412588e-4	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_761	I (39)	2.61541e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_165	IV (14)	0.0149422328	8.51642e-5	Liver and Bile Duct	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_762	I (10)	4.594045e-4	9.34104e-5	Head and Neck	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_763	I (75)	1.26835e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_166	II (10)	0.0022532278	1.029895e-4	Pancreas and Gallbladder	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_764	I (22)	9.98e-6	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_167	IV (14)	0.0187163126	8.51642e-5	Liver and Bile Duct	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_168	IV (74)	0.0050763827	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_765	I (14)	1.097237e-4	1.029895e-4	Pancreas and Gallbladder	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_766	I (7)	8.5703e-6	1.023644e-4	NEC of Lung and Other Organs	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_767	I (39)	3.17642e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_768	II (24)	2.357247e-4	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_769	III (37)	1.420301e-4	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_169	IV (74)	0.0021219962	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_770	III (15)	2.09234e-5	1.029895e-4	Pancreas and Gallbladder	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_170	III (12)	0.0177963855	1.041925e-4	Uterus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_771	II (24)	1.78647e-5	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_171	IV (74)	0.0153948052	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_172	III (45)	0.0058224438	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_772	IV (74)	7.385607e-4	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_773	I (39)	1.7955e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_774	I (39)	7.01275e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_173	IV (31)	0.0025049539	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_775	I (161)	6.5859e-6	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_776	I (2)	1.160133e-4	6.13702e-5	Anus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_777	II (23)	7.49339e-5	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_778	III (45)	2.03029e-4	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_779	III (45)	4.310128e-4	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_174	IV (31)	0.0139080186	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_780	IV (31)	7.55974e-5	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_781	III (31)	7.8616e-6	6.93495e-5	Prostate	III	V	4	5
+cancer_cfdna_782	IV (49)	1.812641e-4	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_783	I (22)	9.17749e-5	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_175	III (16)	0.0644118898	1.023644e-4	NEC of Lung and Other Organs	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_784	I (8)	3.4984e-5	7.8737e-5	Bone and Soft Tissue	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_785	III (45)	8.9434e-6	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_786	IV (74)	2.35533e-5	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_787	IV (49)	7.378318e-4	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_788	III (31)	1.3951e-5	6.93495e-5	Prostate	III	IV	4	4
+cancer_cfdna_176	IV (49)	0.0033095352	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_177	IV (49)	0.0255938953	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_789	II (108)	1.177129e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_790	III (31)	2.23205e-5	6.93495e-5	Prostate	III	Other/missing	5	4
+cancer_cfdna_178	II (2)	0.0016084233	7.8737e-5	Bone and Soft Tissue	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_791	I (39)	2.91449e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_179	IV (14)	0.0056415863	8.51642e-5	Liver and Bile Duct	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_792	I (8)	4.562695e-4	7.5803399999999993e-05	Cervix	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_793	I (47)	1.52468e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_794	I (47)	2.57385e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_795	III (6)	8.850967e-4	7.8737e-5	Bone and Soft Tissue	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_796	IV (74)	1.108194e-4	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_797	II (24)	2.72917e-5	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_798	I (75)	1.85685e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_180	IV (74)	0.0014834367000000001	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_799	II (5)	2.72412e-5	8.51642e-5	Liver and Bile Duct	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_182	III (16)	0.0335111134	1.023644e-4	NEC of Lung and Other Organs	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_801	III (19)	2.940478e-4	1.948553e-4	Ovary	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_183	IV (34)	0.1292254287	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_184	IV (14)	0.0441440619	8.51642e-5	Liver and Bile Duct	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_185	IV (49)	0.001470325	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_802	I (9)	1.170134e-4	1.012548e-4	Stomach and Esophagus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_186	III (16)	0.027638824	1.023644e-4	NEC of Lung and Other Organs	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_803	I (39)	2.36814e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_188	IV (74)	0.0824184625	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_189	II (108)	0.0013336728	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_190	I (5)	0.0034849455	8.51642e-5	Liver and Bile Duct	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_191	IV (74)	0.0090640108	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_804	I (47)	2.62885e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_805	I (22)	4.5249e-5	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_193	IV (74)	0.0015233544	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_806	II (145)	1.5146e-5	6.93495e-5	Prostate	II	Other/missing	4	4
+cancer_cfdna_194	IV (49)	0.0029031457	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_807	I (47)	1.9586e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_195	III (45)	0.0041713222	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_196	IV (74)	0.0034633069	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_808	II (13)	2.405292e-4	1.012548e-4	Stomach and Esophagus	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_197	III (45)	0.003269992	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_198	II (8)	0.0080654337	9.34104e-5	Head and Neck	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_809	II (145)	1.31878e-5	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_810	II (145)	4.32805e-5	6.93495e-5	Prostate	II	Other/missing	4	4
+cancer_cfdna_200	IV (31)	0.0098762447	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_201	IV (31)	0.0088849666	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_812	I (39)	3.12708e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_202	IV (14)	0.0039028403	8.69931e-5	Breast	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_813	II (13)	2.07913e-5	1.012548e-4	Stomach and Esophagus	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_203	IV (49)	0.0237241098	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_815	III (19)	1.777181e-4	1.012548e-4	Stomach and Esophagus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_816	IV (31)	0.0012175778	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_204	IV (6)	0.0028632023	7.8737e-5	Bone and Soft Tissue	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_817	II (24)	1.007635e-4	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_205	IV (32)	0.0454424782	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_206	IV (34)	0.0903127036	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_207	IV (34)	0.0174236402	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_208	III (45)	0.0069578282	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_819	I (161)	3.08617e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_820	I (13)	2.26479e-5	1.948553e-4	Ovary	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_209	I (5)	0.0031848487	8.51642e-5	Liver and Bile Duct	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_821	I (10)	9.542e-6	9.34104e-5	Head and Neck	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_822	III (31)	2.42322e-5	6.93495e-5	Prostate	III	IV	4	4
+cancer_cfdna_210	IV (23)	0.0380182686	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_823	IV (13)	6.620175e-4	1.376508e-4	Kidney	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_824	III (15)	6.065573e-4	1.029895e-4	Pancreas and Gallbladder	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_211	II (8)	0.0024509101	9.34104e-5	Head and Neck	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_213	IV (34)	0.0234845259	1.227627e-4	Colon and Rectum	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_826	III (31)	8.5171e-6	6.93495e-5	Prostate	III	V	4	5
+cancer_cfdna_214	IV (10)	0.0026813215	1.948553e-4	Ovary	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_827	II (5)	8.623573e-4	1.376508e-4	Kidney	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_828	III (31)	2.33319e-5	6.93495e-5	Prostate	III	IV	4	4
+cancer_cfdna_215	III (45)	0.0464840211	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_216	IV (74)	0.0035041579	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_217	IV (74)	0.0839214788	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_829	IV (74)	2.965728e-4	9.80484e-5	Lung	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_830	III (45)	5.49808e-5	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_218	III (45)	0.0300337519	9.80484e-5	Lung	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_831	IV (16)	7.7452e-6	6.93495e-5	Prostate	IV	V	5	4
+cancer_cfdna_219	III (15)	0.0099745023	1.029895e-4	Pancreas and Gallbladder	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_832	II (145)	2.23085e-5	6.93495e-5	Prostate	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_220	III (5)	0.0044279388	6.13702e-5	Anus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_221	IV (49)	0.0020722526	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_833	I (9)	1.52059e-5	1.012548e-4	Stomach and Esophagus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_834	I (10)	9.6221e-6	9.34104e-5	Head and Neck	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_835	I (39)	4.1179e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_836	III (37)	2.42511e-4	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_222	IV (49)	0.004128195	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_837	I (39)	3.96601e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_838	IV (31)	5.590454e-4	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_839	I (58)	6.23442e-5	6.93495e-5	Prostate	I	Other/missing	4	5
+cancer_cfdna_224	III (5)	0.0260858893	6.13702e-5	Anus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_840	II (1)	4.03823e-5	1.948553e-4	Ovary	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_225	IV (49)	0.0664366157	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_841	I (39)	4.12814e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_842	II (6)	1.27071e-5	1.183757e-4	Bladder and Urothelial Tract	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_226	IV (32)	0.0020449547	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_843	II (6)	3.3229e-5	1.183757e-4	Bladder and Urothelial Tract	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_845	II (145)	2.74327e-5	6.93495e-5	Prostate	II	IV	4	4
+cancer_cfdna_846	I (161)	1.75635e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_847	III (15)	2.76166e-5	1.029895e-4	Pancreas and Gallbladder	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_848	II (108)	7.47067e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_849	II (145)	1.77711e-5	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_850	III (31)	3.6488e-5	6.93495e-5	Prostate	III	V	5	4
+cancer_cfdna_851	I (58)	6.9199e-6	6.93495e-5	Prostate	I	IV	4	4
+cancer_cfdna_852	II (23)	8.170386e-4	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_853	I (161)	3.3013e-5	8.69931e-5	Breast	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_854	II (145)	5.4168e-6	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_227	IV (16)	0.0078339493	6.93495e-5	Prostate	IV	Other/missing	4	5
+cancer_cfdna_855	I (39)	3.5486e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_856	II (24)	1.034834e-4	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_228	I (22)	0.0018924296	1.227627e-4	Colon and Rectum	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_229	IV (32)	0.0120011263	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_230	IV (23)	0.0423109626	1.023644e-4	NEC of Lung and Other Organs	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_231	III (28)	0.0017516934	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_232	IV (14)	0.0483663904	8.51642e-5	Liver and Bile Duct	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_233	IV (31)	0.0242641806	9.34104e-5	Head and Neck	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_859	III (9)	1.51534e-5	9.34104e-5	Head and Neck	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_860	III (31)	1.47387e-5	6.93495e-5	Prostate	III	V	4	5
+cancer_cfdna_861	I (75)	1.512537e-4	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_234	IV (10)	0.0154590462	1.948553e-4	Ovary	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_862	II (108)	2.331899e-4	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_863	II (24)	2.853195e-4	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_864	III (19)	2.437615e-4	1.012548e-4	Stomach and Esophagus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_865	II (24)	2.456385e-4	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_235	IV (10)	0.0114461796	1.948553e-4	Ovary	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_866	II (23)	1.3088e-5	1.227627e-4	Colon and Rectum	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_867	I (5)	4.728577e-4	1.183757e-4	Bladder and Urothelial Tract	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_868	III (19)	0.0011904572	1.012548e-4	Stomach and Esophagus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_869	IV (49)	1.703768e-4	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_870	I (9)	8.228e-6	1.012548e-4	Stomach and Esophagus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_237	II (5)	0.0145692012	8.51642e-5	Liver and Bile Duct	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_871	I (39)	2.05671e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_872	III (6)	2.13917e-5	7.8737e-5	Bone and Soft Tissue	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_873	I (39)	3.9739e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_874	IV (13)	2.27917e-5	1.376508e-4	Kidney	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_875	III (19)	4.171128e-4	1.948553e-4	Ovary	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_238	IV (16)	0.0156725251	6.93495e-5	Prostate	IV	Other/missing	4	5
+cancer_cfdna_239	III (19)	0.0028207451	1.948553e-4	Ovary	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_876	II (13)	2.24046e-5	1.012548e-4	Stomach and Esophagus	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_240	IV (32)	0.0710670314	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_877	II (24)	1.27389e-4	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_878	I (47)	6.0113e-6	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_879	I (47)	3.55312e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_880	IV (13)	3.12601e-5	1.376508e-4	Kidney	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_881	II (13)	1.54001e-5	1.012548e-4	Stomach and Esophagus	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_882	I (75)	2.30384e-5	1.041925e-4	Uterus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_883	III (31)	8.1009e-6	6.93495e-5	Prostate	III	V	4	5
+cancer_cfdna_884	III (31)	4.30733e-5	6.93495e-5	Prostate	III	IV	4	4
+cancer_cfdna_885	IV (13)	1.627848e-4	1.376508e-4	Kidney	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_886	I (47)	1.80553e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_887	IV (13)	9.611523e-4	1.376508e-4	Kidney	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_888	I (39)	2.66111e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_241	IV (49)	0.0047688639	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_243	IV (49)	0.0915398915	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_244	IV (10)	0.0100307503	1.948553e-4	Ovary	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_889	II (145)	2.32185e-5	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_245	II (108)	0.0025045993	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_890	III (37)	7.7084e-4	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_891	I (47)	1.58127e-5	9.80484e-5	Lung	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_246	I (10)	0.1182363003	9.34104e-5	Head and Neck	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_247	IV (16)	0.0264694867	6.93495e-5	Prostate	IV	V	5	4
+cancer_cfdna_248	IV (14)	0.0124954077	8.51642e-5	Liver and Bile Duct	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_249	IV (49)	0.0661522663	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_894	II (108)	1.01182e-5	8.69931e-5	Breast	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_250	IV (32)	0.0117081118	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_895	IV (49)	0.0010507191	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_896	III (19)	3.427528e-4	1.012548e-4	Stomach and Esophagus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_251	III (37)	0.0104588456	1.227627e-4	Colon and Rectum	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_897	III (15)	2.213365e-4	1.029895e-4	Pancreas and Gallbladder	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_898	I (14)	2.729088e-4	1.029895e-4	Pancreas and Gallbladder	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_899	II (145)	1.35141e-5	6.93495e-5	Prostate	II	IV	4	4
+cancer_cfdna_252	II (8)	0.0105873779	9.34104e-5	Head and Neck	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_900	III (31)	1.63545e-5	6.93495e-5	Prostate	III	III	4	3
+cancer_cfdna_901	I (5)	2.292281e-4	8.51642e-5	Liver and Bile Duct	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_902	I (2)	2.08332e-5	6.13702e-5	Anus	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_253	III (15)	0.0032751525	1.029895e-4	Pancreas and Gallbladder	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_254	III (19)	0.0157242477	1.012548e-4	Stomach and Esophagus	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_903	II (13)	1.40045e-5	1.012548e-4	Stomach and Esophagus	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_904	III (28)	2.81256e-5	8.69931e-5	Breast	III	Other/missing	Other/missing	Other/missing
+cancer_cfdna_905	II (24)	7.106822e-4	9.80484e-5	Lung	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_255	IV (14)	0.0722884545	8.51642e-5	Liver and Bile Duct	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_906	I (39)	4.07609e-5	1.376508e-4	Kidney	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_256	IV (32)	0.1394261335	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_257	IV (49)	0.0693314854	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_907	II (10)	1.06328e-4	1.029895e-4	Pancreas and Gallbladder	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_908	II (145)	1.08776e-5	6.93495e-5	Prostate	II	III	4	3
+cancer_cfdna_909	I (7)	8.3644e-6	1.023644e-4	NEC of Lung and Other Organs	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_910	II (13)	0.0010344764	1.012548e-4	Stomach and Esophagus	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_258	IV (5)	0.0080640247	1.183757e-4	Bladder and Urothelial Tract	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_259	IV (49)	0.0027262033	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_911	II (10)	3.47905e-5	1.029895e-4	Pancreas and Gallbladder	II	Other/missing	Other/missing	Other/missing
+cancer_cfdna_912	I (10)	2.812074e-4	9.34104e-5	Head and Neck	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_913	I (14)	1.86654e-5	1.029895e-4	Pancreas and Gallbladder	I	Other/missing	Other/missing	Other/missing
+cancer_cfdna_260	IV (32)	0.0473655296	1.012548e-4	Stomach and Esophagus	IV	Other/missing	Other/missing	Other/missing
+cancer_cfdna_914	IV (49)	3.789814e-4	1.029895e-4	Pancreas and Gallbladder	IV	Other/missing	Other/missing	Other/missing

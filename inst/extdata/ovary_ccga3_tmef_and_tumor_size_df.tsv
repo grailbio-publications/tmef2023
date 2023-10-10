@@ -1,0 +1,15 @@
+cancer_id	tmef	tumor_size	tmef_nc98	type_ovarian_label	label	histology	stage
+cancer_cfdna_515	8.02508e-5	120	1.948553e-4	Type I	Ovary	Endometrioid	I
+cancer_cfdna_261	0.0030640981	125	1.948553e-4	Type II	Ovary	Serous	III
+cancer_cfdna_950	9.055669e-4	30	1.948553e-4	Type II	Ovary	Serous	III
+cancer_cfdna_1031	5.02131e-5	115	1.948553e-4	Type I	Ovary	Endometrioid	I
+cancer_cfdna_1115	3.1758e-5	220	1.948553e-4	Type I	Ovary	?	I
+cancer_cfdna_1243	3.47045e-5	105	1.948553e-4	Type I	Ovary	Endometrioid	I
+cancer_cfdna_1448	1.682477e-4	180	1.948553e-4	Type I	Ovary	Clear Cell	I
+cancer_cfdna_1482	0.0012334336	112	1.948553e-4	Type II	Ovary	Serous	I
+cancer_cfdna_500	6.177766e-4	85	1.948553e-4	Type II	Ovary	Serous	III
+cancer_cfdna_544	6.08167e-5	10	1.948553e-4	Type II	Ovary	Serous	I
+cancer_cfdna_670	7.07982e-4	3	1.948553e-4	Type II	Ovary	Serous	III
+cancer_cfdna_155	0.0024213976	7	1.948553e-4	Type II	Ovary	Serous	III
+cancer_cfdna_820	2.26479e-5	150	1.948553e-4	Type I	Ovary	Endometrioid	I
+cancer_cfdna_840	4.03823e-5	30	1.948553e-4	Type II	Ovary	Serous	II
