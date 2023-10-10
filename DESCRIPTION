@@ -5,7 +5,7 @@ Authors@R: c(person("Collin", "Melton", role = c("aut", "cre"),
                     email = "cmelton@grailbio.com"))
 Description: R package for manuscript processed data and select code.
 Depends: R (>= 3.4.3)
-Imports: tidyverse
+Imports: tidyverse, survminer, gtsummary, gt, circlize, ComplexHeatmap, pander
 License: file LICENSE
 Encoding: UTF-8
 Suggests:
