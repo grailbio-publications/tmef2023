@@ -4,6 +4,14 @@ This project provides data and code to reproduce the analysis results
 presented in Melton et al., 2023. "A Novel Tissue-Free Method to Estimate
 Tumor-Derived Cell-Free DNA Abundance Using Tumor Methylation Patterns"
 
+## Rendering the RMarkdown
+
+Install the R package from github.
+```devtools::install_github("grailbio-publications/tmef2023")```
+
+To open the figures.Rmd file installed with the package:
+```file.edit(system.file("rmd", "figures.Rmd", package = "tmef2023"))```
+
 ## System Requirements
 
 Follow instructions at https://cran.r-project.org
