@@ -206,6 +206,7 @@ annot_row <-
                                     labels_gp = grid::gpar(fontsize = 24))
   )
 ht <- ComplexHeatmap::Heatmap(
+  column_dend_height = grid::unit(60, "mm"),
   mat_full_samples_by_variants[df_ordered_ptps_combined$participant_id, ],
   col = hcl.colors(8, palette = "viridis", alpha = NULL, rev = T),
   name = "DMR\nFrequency",
@@ -618,7 +619,7 @@ tmef2023::nc_cpg_dist |>
 
 # Figure S4: TMeF by Cancer Type by Stage
 
-```{r boxplot_by_stage_by_label, fig.width=8, fig.height=5}
+```{r boxplot_by_stage_by_label, fig.width=14, fig.height=7}
 boxplot_by_stage_by_label_pvals <- tmef2023::df_cancer_tmefs_fig_df |>
   dplyr::group_by(label) |>
   dplyr::summarise(spearman_pval = cor.test(
@@ -1047,7 +1048,7 @@ tmef2023::uterus_ccga3_tmef_and_tumor_size_df |>
 # TMeF Versus Survival
 
 ```{r forest_plot_helper_funcs}
-generate_survival_odds_ratio_df <- function(surv_model) {
+generate_survival_hazard_ratio_df <- function(surv_model) {
   surv_model_summary <- summary(surv_model)
   surv_model_summary$coefficients |>
     as.data.frame(row.names = NULL) |>
@@ -1057,29 +1058,29 @@ generate_survival_odds_ratio_df <- function(surv_model) {
                         dplyr::mutate(variable = rownames(surv_model_summary$conf.int)),
                       by = "variable") |>
     dplyr::mutate(index = 1:dplyr::n()) |>
-    dplyr::rename(odds_ratio = `exp(coef).y`,
-                  odds_ratio_lcb = `lower .95`,
-                  odds_ratio_ucb = `upper .95`,
+    dplyr::rename(hazard_ratio = `exp(coef).y`,
+                  hazard_ratio_lcb = `lower .95`,
+                  hazard_ratio_ucb = `upper .95`,
                   pvalue = `Pr(>|z|)`) |>
-    dplyr::select(variable, index, odds_ratio, odds_ratio_lcb, odds_ratio_ucb,
+    dplyr::select(variable, index, hazard_ratio, hazard_ratio_lcb, hazard_ratio_ucb,
                   pvalue) |>
     dplyr::mutate(variable = gsub(pattern = "label", replacement = "", x = variable),
                   variable = gsub(pattern = "tmef_grp", replacement = "", x = variable),
                   variable = gsub(pattern = "stage", replacement = "Stage ", x = variable))
 }
 
-odds_ratio_plt <- function(survival_odds_ratio_df, title = "") {
-  survival_odds_ratio_df |>
-    ggplot2::ggplot(ggplot2::aes(y = index, x = odds_ratio)) +
+hazard_ratio_plt <- function(survival_hazard_ratio_df, title = "") {
+  survival_hazard_ratio_df |>
+    ggplot2::ggplot(ggplot2::aes(y = index, x = hazard_ratio)) +
       ggplot2::geom_point(shape = 18, size = 5) +
-      ggplot2::geom_errorbarh(ggplot2::aes(xmin = odds_ratio_lcb,
-                                           xmax = odds_ratio_ucb),
+      ggplot2::geom_errorbarh(ggplot2::aes(xmin = hazard_ratio_lcb,
+                                           xmax = hazard_ratio_ucb),
                               height = 0.25) +
       ggplot2::geom_vline(xintercept = 1, color = "red", linetype = "dashed",
                           cex = 1, alpha = 0.5) +
-      ggplot2::scale_y_continuous(name = "", breaks=1:length(survival_odds_ratio_df$variable),
-                                  labels = survival_odds_ratio_df$variable, trans = "reverse") +
-      ggplot2::xlab("Odds Ratio (95% CI)") +
+      ggplot2::scale_y_continuous(name = "", breaks=1:length(survival_hazard_ratio_df$variable),
+                                  labels = survival_hazard_ratio_df$variable, trans = "reverse") +
+      ggplot2::xlab("Hazards Ratio (95% CI)") +
       ggplot2::ylab("") +
       ggplot2::theme_bw() +
       ggplot2::theme(panel.border = ggplot2::element_blank(),
@@ -1093,13 +1094,15 @@ odds_ratio_plt <- function(survival_odds_ratio_df, title = "") {
     ggplot2::ggtitle(title)
 }
 
-surv_table_base_plt <- function(survival_odds_ratio_df) {
-  survival_odds_ratio_df |>
+surv_table_base_plt <- function(survival_hazard_ratio_df) {
+  survival_hazard_ratio_df |>
     ggplot2::ggplot(ggplot2::aes(y = variable)) +
     ggplot2::ylab(NULL) +
     ggplot2::xlab("") +
-    ggplot2::theme(plot.title = ggplot2::element_text(hjust = 0.5, size=12),
-                   axis.text.x = ggplot2::element_text(color="white", hjust = -3, size = 25),
+    ggplot2::theme(plot.title = ggplot2::element_text(hjust = 0.5, size = 12),
+                   # Keep axis text but turn white so it cannot be seen. Adjust size to
+                   # align tables with the odds ratio plot.
+                   axis.text.x = ggplot2::element_text(color = "white", hjust = -3, size = 22),
                    axis.line = ggplot2::element_blank(),
                    axis.text.y = ggplot2::element_blank(),
                    axis.ticks = ggplot2::element_blank(),
@@ -1112,38 +1115,38 @@ surv_table_base_plt <- function(survival_odds_ratio_df) {
                    plot.background = ggplot2::element_blank())
 }
 
-odds_ratio_tbl_plt <- function(survival_odds_ratio_df) {
-  survival_odds_ratio_df |>
+hazard_ratio_tbl_plt <- function(survival_hazard_ratio_df) {
+  survival_hazard_ratio_df |>
     surv_table_base_plt() +
     ggplot2::labs(title = "space") +
     ggplot2::geom_text(ggplot2::aes(
       y = rev(index),
       x = 1,
-      label = sprintf("%0.1f", round(odds_ratio, digits = 1))), size = 4) +
-    ggplot2::ggtitle("OR")
+      label = sprintf("%0.1f", round(hazard_ratio, digits = 1))), size = 4) +
+    ggplot2::ggtitle("HR")
 }
 
-odds_ratio_ci_tbl_plt <- function(survival_odds_ratio_df) {
-  survival_odds_ratio_df |>
+hazard_ratio_ci_tbl_plt <- function(survival_hazard_ratio_df) {
+  survival_hazard_ratio_df |>
     surv_table_base_plt() +
     ggplot2::geom_text(ggplot2::aes(
       y = rev(index),
       x = 1,
       label = sprintf("%0.1f - %0.1f",
-                      round(odds_ratio_lcb, digits = 1),
-                      round(odds_ratio_ucb, digits = 1))),
+                      round(hazard_ratio_lcb, digits = 1),
+                      round(hazard_ratio_ucb, digits = 1))),
       size = 4) +
     ggplot2::ggtitle("95% CI")
 }
 
 forest_plot <- function(surv_model, return_grob = TRUE, title = "") {
-  surv_model_odds_ratios <- surv_model |>
-    generate_survival_odds_ratio_df()
+  surv_model_hazard_ratios <- surv_model |>
+    generate_survival_hazard_ratio_df()
 
   this_grob <- gridExtra::arrangeGrob(
-    odds_ratio_plt(surv_model_odds_ratios, title = title),
-    odds_ratio_tbl_plt(surv_model_odds_ratios),
-    odds_ratio_ci_tbl_plt(surv_model_odds_ratios),
+    hazard_ratio_plt(surv_model_hazard_ratios, title = title),
+    hazard_ratio_tbl_plt(surv_model_hazard_ratios),
+    hazard_ratio_ci_tbl_plt(surv_model_hazard_ratios),
     layout_matrix = matrix(c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 3, 3), nrow = 1))
 
   if (return_grob) {
@@ -1329,6 +1332,45 @@ forest_plot(surv_fit_all_cancers_stage_label_and_tmef_grp, return_grob = FALSE,
             title = "Combined Cancers")
 ```
 
+```{r surv_all_cancers_seer, fig.width=8, fig.height=5}
+seer_os_age_key_df <- tmef2023::ccga3_tmef_survival_df |>
+  dplyr::select(age) |>
+  dplyr::distinct() |>
+  dplyr::mutate(age_key = dplyr::case_when(age < 30 ~ 30,
+                                           age > 84 ~ 84,
+                                           TRUE ~ as.numeric(age))) |>
+  tidyr::crossing(tmef2023::seer_stratified_os |>
+                     dplyr::select(lower_age, upper_age) |>
+                     dplyr::distinct()) |>
+  dplyr::filter(age_key >= lower_age, age_key <= upper_age) |>
+  dplyr::select(age, lower_age) |>
+  dplyr::arrange(age)
+
+seer_survival_per_cancer_id <- tmef2023::ccga3_tmef_survival_df |>
+  dplyr::select(cancer_id, ajcc_cancer_type, age, sex, stage, tmef_grp, label) |>
+  dplyr::left_join(seer_os_age_key_df, by = "age") |>
+  dplyr::left_join(tmef2023::seer_stratified_os,
+                   by = c("ajcc_cancer_type", "lower_age", "sex", "stage"))
+
+# 2 participants from the TMEF > 1e-2 tmef_grp cannot be matched to SEER.
+seer_survival_per_cancer_id |>
+  dplyr::filter(is.na(os)) |>
+  dplyr::select(cancer_id, label, ajcc_cancer_type, tmef_grp) |>
+  gt::gt(caption = "Participants not matched to SEER")
+
+seer_survival_comp_for_tmef_grps <- seer_survival_per_cancer_id |>
+  # Remove 2 NA participants.
+  dplyr::filter(!is.na(os)) |>
+  dplyr::group_by(tmef_grp, months) |>
+  dplyr::summarize(os = mean(os, na.rm=TRUE)) |>
+  dplyr::ungroup()
+
+surv_all_cancers_plots[[1]]$plot +
+  ggplot2::geom_line(data = seer_survival_comp_for_tmef_grps,
+                     ggplot2::aes(x = months, y = os, color = tmef_grp, group = tmef_grp),
+                     linetype = "dashed")
+```
+
 ## Figure S13: Survival by Cancer Type
 
 ```{r surv_each_cancer, fig.width=25, fig.height=35}
@@ -1359,6 +1401,37 @@ arranged_by_cancer_plot <- survminer::arrange_ggsurvplots(
   risk.table.height = 0.25,
   surv.plot.height = 0.8,
   print = TRUE)
+```
+
+## Figure S14: Cancer Spectrum by Stage and TMeF Group
+
+```{r n_patients_by_stage_label_and_tmef_group, fig.width=18, fig.height=5}
+tmef2023::df_cancer_tmefs_fig_df |>
+  dplyr::mutate(tmef_grp = factor(
+    dplyr::case_when(tmef < 10^-4 ~ "TMeF < 1e-4",
+                     tmef < 10^-3 ~ "1e-4 < TMeF < 1e-3",
+                     tmef < 10^-2 ~ "1e-3 < TMeF < 1e-2",
+                     tmef >= 10^-2 ~ "TMeF > 1e-2"),
+    levels = c("TMeF < 1e-4",
+               "1e-4 < TMeF < 1e-3",
+               "1e-3 < TMeF < 1e-2",
+               "TMeF > 1e-2"))) |>
+  dplyr::group_by(tmef_grp, label, stage) |>
+  dplyr::tally() |>
+  dplyr::ungroup() |>
+  tidyr::complete(stage, tmef_grp, label, fill = list(n = 0)) |>
+  ggplot2::ggplot(ggplot2::aes(x = label, y = n, fill = stage)) +
+  ggplot2::geom_bar(stat = "identity", position = "dodge") +
+  ggplot2::facet_wrap(~tmef_grp, ncol = 4, scales = "free_x") +
+  ggplot2::scale_fill_viridis_d() +
+  ggplot2::coord_flip() +
+  ggplot2::labs(x = "Cancer Label",
+                y = "# of Participants",
+                fill = "Clinical\nStage") +
+  ggplot2::theme_bw() +
+  ggplot2::theme(text = ggplot2::element_text(size = 20),
+                 legend.text = ggplot2::element_text(size = 18),
+                 legend.title = ggplot2::element_text(size = 20))
 ```
 
 # Reproducibility

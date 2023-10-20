@@ -989,7 +989,7 @@
 #' @title CCGA Substudy 3 Survival Data
 #' @description A data frame with survival data for select CCGA substudy 3
 #' participants.
-#' @format A data frame with 1434 rows and 7 variables:
+#' @format A data frame with 1434 rows and 10 variables:
 #' \describe{
 #'   \item{\code{cancer_id}}{character COLUMN_DESCRIPTION}
 #'   \item{\code{tmef}}{double COLUMN_DESCRIPTION}
@@ -998,6 +998,9 @@
 #'   \item{\code{stage}}{character COLUMN_DESCRIPTION}
 #'   \item{\code{overall_survival}}{double COLUMN_DESCRIPTION}
 #'   \item{\code{censored}}{logical COLUMN_DESCRIPTION}
+#'   \item{\code{age}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{sex}}{character COLUMN_DESCRIPTION}
+#'   \item{\code{ajcc_cancer_type}}{character COLUMN_DESCRIPTION}
 #'}
 #' @details DETAILS
 "ccga3_tmef_survival_df"
@@ -1018,3 +1021,21 @@
 #'}
 #' @details DETAILS
 "df_cancer_tmefs_fig_df"
+
+#' @title SEER Processed Data
+#' @description A data frame with overall survival by cancer type, stage,
+#' sex, and age range.
+#' @format A data frame with 208193 rows and 9 variables:
+#' \describe{
+#'   \item{\code{sex}}{character COLUMN_DESCRIPTION}
+#'   \item{\code{lower_age}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{upper_age}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{ajcc_cancer_type}}{character COLUMN_DESCRIPTION}
+#'   \item{\code{stage}}{character COLUMN_DESCRIPTION}
+#'   \item{\code{months}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{n}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{os}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{os_imputed_from_prior_timepoint}}{logical COLUMN_DESCRIPTION}
+#'}
+#' @details DETAILS
+"seer_stratified_os"
