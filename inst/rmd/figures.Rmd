@@ -197,13 +197,13 @@ annot_row <-
   ComplexHeatmap::rowAnnotation(
     `Cancer type` = df_ordered_ptps_combined$label,
     col = list(`Cancer type` = greys_color_map),
-    annotation_name_gp = grid::gpar(fontsize = 24),
+    annotation_name_gp = grid::gpar(fontsize = 18),
     simple_anno_size = grid::unit(0.5, "cm"),
     show_annotation_name = FALSE,
     show_legend = FALSE,
     foo = ComplexHeatmap::anno_mark(at = floor(df_ptp_tick_label$midpoint),
                                     labels = df_ptp_tick_label$label,
-                                    labels_gp = grid::gpar(fontsize = 24))
+                                    labels_gp = grid::gpar(fontsize = 18))
   )
 ht <- ComplexHeatmap::Heatmap(
   column_dend_height = grid::unit(60, "mm"),
@@ -221,8 +221,8 @@ ht <- ComplexHeatmap::Heatmap(
   show_row_names = FALSE,
   show_column_names = FALSE,
   right_annotation = annot_row,
-  column_title_gp = grid::gpar(fontsize = 24),
-  row_dend_gp = grid::gpar(fontsize = 24),
+  column_title_gp = grid::gpar(fontsize = 18),
+  row_dend_gp = grid::gpar(fontsize = 18),
   heatmap_legend_param = list(labels_gp = grid::gpar(fontsize = 18),
                               title_gp = grid::gpar(fontsize = 18))
 )
@@ -1334,14 +1334,12 @@ forest_plot(surv_fit_all_cancers_stage_label_and_tmef_grp, return_grob = FALSE,
 
 ```{r surv_all_cancers_seer, fig.width=8, fig.height=5}
 seer_os_age_key_df <- tmef2023::ccga3_tmef_survival_df |>
-  dplyr::select(age) |>
-  dplyr::distinct() |>
+  dplyr::distinct(age) |>
   dplyr::mutate(age_key = dplyr::case_when(age < 30 ~ 30,
                                            age > 84 ~ 84,
                                            TRUE ~ as.numeric(age))) |>
   tidyr::crossing(tmef2023::seer_stratified_os |>
-                     dplyr::select(lower_age, upper_age) |>
-                     dplyr::distinct()) |>
+                     dplyr::distinct(lower_age, upper_age)) |>
   dplyr::filter(age_key >= lower_age, age_key <= upper_age) |>
   dplyr::select(age, lower_age) |>
   dplyr::arrange(age)
@@ -1365,10 +1363,15 @@ seer_survival_comp_for_tmef_grps <- seer_survival_per_cancer_id |>
   dplyr::summarize(os = mean(os, na.rm=TRUE)) |>
   dplyr::ungroup()
 
-surv_all_cancers_plots[[1]]$plot +
+surv_all_cancers_plot_w_seer <- surv_all_cancers_plots[[1]]
+
+surv_all_cancers_plot_w_seer$plot <- surv_all_cancers_plot_w_seer$plot +
   ggplot2::geom_line(data = seer_survival_comp_for_tmef_grps,
-                     ggplot2::aes(x = months, y = os, color = tmef_grp, group = tmef_grp),
+                     ggplot2::aes(x = months, y = os, color = tmef_grp,
+                                  group = tmef_grp),
                      linetype = "dashed")
+
+surv_all_cancers_plot_w_seer
 ```
 
 ## Figure S13: Survival by Cancer Type
